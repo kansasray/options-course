@@ -74,6 +74,18 @@
      "url": "https://www.youtube.com/watch?v=-mzxL5dk3TY",
      "duration": "8:46"
     }
+   ],
+   "figures": [
+    {
+     "src": "charts/premium-decomposition.svg",
+     "alt": "權利金拆解成內在價值與時間價值的示意圖，以履約價 100 的買權為例。",
+     "caption": "看權利金曲線與內在價值折線之間的縫隙：那就是時間價值，在價平附近最寬，離履約價越遠越窄。"
+    },
+    {
+     "src": "charts/moneyness.svg",
+     "alt": "買權與賣權在不同股價區間的價內、價平、價外對照圖。",
+     "caption": "上下兩列的色帶方向相反：同一個履約價，股價走高讓買權進入價內時，賣權正好走向價外。"
+    }
    ]
   },
   {
@@ -128,6 +140,13 @@
      "channel": "美股先锋",
      "url": "https://www.youtube.com/watch?v=8ubX9bRsVKY",
      "duration": "6:50"
+    }
+   ],
+   "figures": [
+    {
+     "src": "charts/theta-decay.svg",
+     "alt": "時間價值隨剩餘天數遞減的曲線，最後 30 天加速下墜。",
+     "caption": "這條曲線不是等速下滑：前兩個月只緩緩滲漏，進入最後 30 天才陡然下墜。賣方偏好短天期，收的就是最陡的這一段。"
     }
    ]
   },
@@ -202,6 +221,13 @@
      "channel": "Option Alpha",
      "url": "https://www.youtube.com/watch?v=vrxcifb83UM",
      "duration": "8:44"
+    }
+   ],
+   "figures": [
+    {
+     "src": "charts/iv-crush.svg",
+     "alt": "財報公布前後隱含波動率與權利金變化的示意圖。",
+     "caption": "盯著財報那條垂直線：公布一過 IV 應聲塌陷，權利金跟著蒸發。買方就算方向押對，也可能被這一下吃掉全部利潤。"
     }
    ]
   }

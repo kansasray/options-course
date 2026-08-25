@@ -75,6 +75,13 @@
      "url": "https://www.youtube.com/watch?v=5atTocDOTpY",
      "duration": "5:16"
     }
+   ],
+   "figures": [
+    {
+     "src": "charts/delta-slope.svg",
+     "alt": "選擇權價值曲線及其在不同股價位置的切線斜率示意圖。",
+     "caption": "Delta 不是固定數字，而是價值曲線在當下股價的切線斜率：圖中價外約 0.16、價平約 0.53，越深入價內越貼近 1。"
+    }
    ]
   },
   {

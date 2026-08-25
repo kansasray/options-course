@@ -73,6 +73,13 @@
      "url": "https://www.youtube.com/watch?v=j7RMw35R5N0",
      "duration": "6:17"
     }
+   ],
+   "figures": [
+    {
+     "src": "charts/covered-call.svg",
+     "alt": "持股加上賣出買權的組合損益圖，與純持股對照，上檔獲利封頂。",
+     "caption": "對照虛線的純持股：實線在 110 之後被削平，換來左半邊整條墊高 3 元。值不值得，取決於你多在意漲過 110 的那一段。"
+    }
    ]
   },
   {
@@ -124,6 +131,13 @@
      "channel": "tastylive",
      "url": "https://www.youtube.com/watch?v=fFaW9OENf8c",
      "duration": "9:41"
+    }
+   ],
+   "figures": [
+    {
+     "src": "charts/gozilla-cc-params.svg",
+     "alt": "Gozilla 自述的 covered call 三項參數：delta 範圍、持股水位與到期天期。",
+     "caption": "三條刻度尺上的深色區段就是他實際下單的範圍。Gozilla（2026-07-11）：「新倉除了選擇短天數（每週一、三、五）都有結算，另一個就是delta不要超過0.4，我最常下的是0.25-0.3左右，最後一個就是不要下滿水位…」"
     }
    ]
   },

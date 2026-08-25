@@ -137,6 +137,13 @@
      "url": "https://www.youtube.com/watch?v=7V5VA0kRzho",
      "duration": "9:05"
     }
+   ],
+   "figures": [
+    {
+     "src": "charts/position-pyramid.svg",
+     "alt": "倉位金字塔示意圖，由下而上是指數底倉、個股持股與選擇權收租。",
+     "caption": "由下往上讀：底層的指數與中層的持股先站穩，頂端那一小塊收租才有依託。兩位 KOL 的差別只在中層那格怎麼配置。"
+    }
    ]
   },
   {

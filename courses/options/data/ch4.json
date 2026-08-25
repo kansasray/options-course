@@ -62,6 +62,13 @@
      "url": "https://www.youtube.com/watch?v=M6UdyEezdWE",
      "duration": "9:19"
     }
+   ],
+   "figures": [
+    {
+     "src": "charts/expiry-flow.svg",
+     "alt": "到期結算流程圖，依價內或價外分成自動履約與權利金歸零兩條路。",
+     "caption": "順著箭頭走一遍就會發現，到期日沒有你出手的空間：價內 0.01 美元即自動履約，價外則整筆歸零。想避開任一結局，唯一的動作是提前平倉。"
+    }
    ]
   },
   {

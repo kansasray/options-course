@@ -74,6 +74,18 @@
      "url": "https://www.youtube.com/watch?v=eW_WPyXJ85Y",
      "duration": "7:14"
     }
+   ],
+   "figures": [
+    {
+     "src": "charts/bull-put-spread.svg",
+     "alt": "多頭賣權價差的損益圖，賣出 100 賣權並買進 90 賣權，兩端損益皆封頂。",
+     "caption": "多買的那腳 90 put 把左端折平在 −7：少收一點權利金，換到虧損有底。這就是價差單與單腳 sell put 的差別所在。"
+    },
+    {
+     "src": "charts/bear-call-spread.svg",
+     "alt": "空頭買權價差的損益圖，賣出 100 買權並買進 110 買權，兩端損益皆封頂。",
+     "caption": "和多頭賣權價差左右鏡像，賭的是股價不漲過 100；110 那腳保護讓最大虧損停在 7，不再是裸賣 call 的無底洞。"
+    }
    ]
   },
   {
@@ -147,6 +159,13 @@
      "channel": "tastylive",
      "url": "https://www.youtube.com/watch?v=VunSjw7JpuM",
      "duration": "5:39"
+    }
+   ],
+   "figures": [
+    {
+     "src": "charts/iron-condor.svg",
+     "alt": "Iron Condor 四腳部位的損益圖，中間為獲利帶、兩側虧損封頂。",
+     "caption": "把它拆成兩組價差來讀：股價只要在 95 到 105 的平台上收盤就賺滿 3 元，衝出任何一側最多也只賠 7 元。"
     }
    ]
   },

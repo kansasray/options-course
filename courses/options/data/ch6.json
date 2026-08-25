@@ -74,6 +74,13 @@
      "url": "https://www.youtube.com/watch?v=UePNSAB-cd4",
      "duration": "5:15"
     }
+   ],
+   "figures": [
+    {
+     "src": "charts/cash-secured-put.svg",
+     "alt": "現金擔保賣權的損益圖，與直接買股對照，下跌時虧損較淺。",
+     "caption": "對照虛線的直接買股：實線的起虧點從 100 退到 96，差距正是先收下的 4 元權利金。被指派時等於用折扣價接股，沒被指派就白收這筆錢。"
+    }
    ]
   },
   {
@@ -149,6 +156,13 @@
      "url": "https://www.youtube.com/watch?v=4sC59wcRg44",
      "duration": "9:37"
     }
+   ],
+   "figures": [
+    {
+     "src": "charts/led-csp-flow.svg",
+     "alt": "Led 的 cash-secured put 操作流程圖，從回檔開倉到平倉或接股的兩條路徑。",
+     "caption": "流程的關鍵在開倉當下就掛好平倉單，兩條出路都事先想清楚。Led（2026-06-18）：「最近這幾個月都是用這樣的方式，每幾天有比較明顯回檔時開倉，等反彈權利金有小賺時平倉」"
+    }
    ]
   },
   {
@@ -206,6 +220,13 @@
      "channel": "追日Gucci-AI效率革命聯盟",
      "url": "https://www.youtube.com/watch?v=nOBetz3OJo0",
      "duration": "9:30"
+    }
+   ],
+   "figures": [
+    {
+     "src": "charts/wheel-cycle.svg",
+     "alt": "Wheel 策略的循環圖：賣出現金擔保賣權、接股、賣掩護性買權、被履約交股。",
+     "caption": "循環的重點在每個節點都先收權利金，被指派或被 call 走只是換一種姿勢繼續收。圖下方的附註也值得留意：Led 的操作只是行為上近似，他本人沒用過這個詞。"
     }
    ]
   }
