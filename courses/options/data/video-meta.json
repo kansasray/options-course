@@ -1,1 +1,702 @@
-{}
+{
+ "-hXMPM5WGcs": {
+  "status": "OK",
+  "seconds": 308,
+  "views": 93696,
+  "channel": "JGTrueStock",
+  "title": "股市極思考EP10：在股市賠錢時，我們到底該做什麼？（遭遇跳空、凹單、連續虧損）"
+ },
+ "-mzxL5dk3TY": {
+  "status": "OK",
+  "seconds": 526,
+  "views": 11159,
+  "channel": "老鲁随笔—美股期權交易",
+  "title": "期权价格怎么算？期权基础知识时间价值和内在价值"
+ },
+ "0SbXHjKij3I": {
+  "status": "OK",
+  "seconds": 243,
+  "views": 21548,
+  "channel": "Option Alpha",
+  "title": "Using Option Delta As A Substitute For ITM Probability"
+ },
+ "0Z9C5DR02XY": {
+  "status": "OK",
+  "seconds": 553,
+  "views": 12917,
+  "channel": "Fail Flop Fly",
+  "title": "✅  Options Trading - Naked Call vs. Covered Call (Beginner Friendly for 2021)"
+ },
+ "1ABz4DHX_l0": {
+  "status": "OK",
+  "seconds": 481,
+  "views": 26222,
+  "channel": "The Retirement Income Investor",
+  "title": "Rolling Options: EVERYTHING You Need to Know || Fidelity Walk-Thru"
+ },
+ "1ORrRaQT4Zw": {
+  "status": "OK",
+  "seconds": 412,
+  "views": 33206,
+  "channel": "Ryan O'Connell, CFA, FRM",
+  "title": "Put Options Explained: Short and Long Puts Explained"
+ },
+ "2JQ5s7O_T_M": {
+  "status": "OK",
+  "seconds": 220,
+  "views": 11720,
+  "channel": "Option Alpha",
+  "title": "Should You Take Profits Early When Selling Naked Puts? [Episode 516] - The Daily Call"
+ },
+ "2hmF5gqKEUg": {
+  "status": "OK",
+  "seconds": 283,
+  "views": 86306,
+  "channel": "Zerodha Varsity",
+  "title": "10. Vega"
+ },
+ "38FVF0XrByU": {
+  "status": "OK",
+  "seconds": 280,
+  "views": 8235,
+  "channel": "Matthew Manuel",
+  "title": "What Happens When an Option Contract Expires"
+ },
+ "3mnG-ht0N64": {
+  "status": "OK",
+  "seconds": 240,
+  "views": 5153,
+  "channel": "工程師Joseph - 理財揪舒服",
+  "title": "【CC字幕】下單介面「期權價格/出價/要價」差別在哪? 掛「限價單」不買貴！ 【期權新手】【Jo來聊美股】"
+ },
+ "4X3HBFntkds": {
+  "status": "OK",
+  "seconds": 269,
+  "views": 85160,
+  "channel": "Option Alpha",
+  "title": "Understanding Theta - Time Decay Of Options"
+ },
+ "4sC59wcRg44": {
+  "status": "OK",
+  "seconds": 576,
+  "views": 70708,
+  "channel": "Kelvin NO 講投資",
+  "title": "💰真 期權教室💰 EP3 初級篇 有錢Short Put 有貨Short Call? 渣住匯豐蟹貨點算好? Option Tutorial Beginner Level"
+ },
+ "51l6HFcvl70": {
+  "status": "OK",
+  "seconds": 549,
+  "views": 13684,
+  "channel": "Ryan O'Connell, CFA, FRM",
+  "title": "Bull Put Spread Strategy Explained | Vertical Spreads & Credit Spreads"
+ },
+ "5atTocDOTpY": {
+  "status": "OK",
+  "seconds": 316,
+  "views": 1275478,
+  "channel": "The Wall Street Journal",
+  "title": "0DTE: Inside the Explosion of Ultra-Risky Options Trading | WSJ"
+ },
+ "5zmTARc-ScY": {
+  "status": "OK",
+  "seconds": 303,
+  "views": 5113,
+  "channel": "斜槓投資達人",
+  "title": "什麼是Delta、Gamma、Theta、Vega？"
+ },
+ "7V5VA0kRzho": {
+  "status": "OK",
+  "seconds": 545,
+  "views": 6651,
+  "channel": "勳仔的理財小角落",
+  "title": "細探台灣金融史上著名的\"0206選擇權屠殺事件\""
+ },
+ "7cX2dZVZUck": {
+  "status": "OK",
+  "seconds": 478,
+  "views": 8557,
+  "channel": "由傻散變大師 - 生活理財頻道",
+  "title": "【期權教學】基本期權認識 - 期權四式 - Long Call Short Call｜股票入門｜新手教學｜投機｜由傻散變大師"
+ },
+ "7pTb1a5IgKM": {
+  "status": "OK",
+  "seconds": 920,
+  "views": 76343,
+  "channel": "projectoption",
+  "title": "Early Options Assignment Risk (When to Worry & When to Chill)"
+ },
+ "8ubX9bRsVKY": {
+  "status": "OK",
+  "seconds": 409,
+  "views": 7531,
+  "channel": "美股先锋",
+  "title": "如何选择期权的时间(expiration date)和价格(strike price) | 美股期权入门教程"
+ },
+ "92VyiUa8ohM": {
+  "status": "OK",
+  "seconds": 457,
+  "views": 6062,
+  "channel": "日日賺 Day Day Earn",
+  "title": "模擬交易 vs 現實交易｜ Paper Trading vs Real Trading"
+ },
+ "9YJ7ExFOsk8": {
+  "status": "OK",
+  "seconds": 558,
+  "views": 9678,
+  "channel": "股金贫道 Gu Jin Pin Dao",
+  "title": "期权的执行以及到期日自动执行的风险和策略(Option Exercise, Auto exercise on expiration day, OCC)"
+ },
+ "AAxY8-nDMTw": {
+  "status": "OK",
+  "seconds": 948,
+  "views": 16370,
+  "channel": "選擇權搖錢樹",
+  "title": "【選擇權入門】選擇權權利金組成"
+ },
+ "Al3rz5T_7C4": {
+  "status": "OK",
+  "seconds": 407,
+  "views": 17437,
+  "channel": "More Money Less Problems",
+  "title": "Should You Avoid Getting Assigned on Covered Calls?"
+ },
+ "B6P7DliJls8": {
+  "status": "OK",
+  "seconds": 924,
+  "views": 10056,
+  "channel": "不預測漲跌",
+  "title": "新手地雷你踩了幾顆？選擇權教學，給新手的前4週交易建議。"
+ },
+ "CF9DhvzVkbI": {
+  "status": "OK",
+  "seconds": 432,
+  "views": 99595,
+  "channel": "tastylive",
+  "title": "Short Naked Put: Options Management Strategy"
+ },
+ "DCsozAkog_s": {
+  "status": "OK",
+  "seconds": 820,
+  "views": 225874,
+  "channel": "InTheMoney",
+  "title": "Get Your Limit Order Filled EVERY Time (and for Cheap!) | Adam Answers Episode 4"
+ },
+ "DlUvCsBNGiE": {
+  "status": "OK",
+  "seconds": 525,
+  "views": 17126,
+  "channel": "啊梨投資功課丨新手理財成長筆記",
+  "title": "[期權入門05] Covered Call 賺息蝕價？賣樓式「收租」陷阱！風險、回報、賺蝕位一次過講清！"
+ },
+ "Ei8g3i_2OiI": {
+  "status": "OK",
+  "seconds": 290,
+  "views": 27579,
+  "channel": "Brad Finn",
+  "title": "BEST Delta For Covered Calls And Cash Secured Puts"
+ },
+ "EsxkJ7JgCK0": {
+  "status": "OK",
+  "seconds": 387,
+  "views": 10411,
+  "channel": "工程師Joseph - 理財揪舒服",
+  "title": "【CC字幕】如何開通期權交易權限及常見問題 【Firstrade】【Jo來聊美股】"
+ },
+ "GxivpCafb1g": {
+  "status": "OK",
+  "seconds": 398,
+  "views": 46742,
+  "channel": "异界番茄说",
+  "title": "什么是实值期权 ITM，平值期权 ATM，虚值期权 OTM！5分钟理解！秒懂期权系列（5）"
+ },
+ "KC7Pzz0EcDI": {
+  "status": "OK",
+  "seconds": 1119,
+  "views": 61065,
+  "channel": "KeensPie Capital Futures",
+  "title": "快速學會選擇權策略單！行情不管小漲小跌我通殺！選擇權價差單最速上手"
+ },
+ "L0yjMRltE4s": {
+  "status": "OK",
+  "seconds": 415,
+  "views": 8777,
+  "channel": "空盒知識 Box Knowledge",
+  "title": "期權讓股票製造現金流！不放過任何賺錢的機會！期權策略 Covered Call！| 空盒知識"
+ },
+ "L_xg4imyAL8": {
+  "status": "OK",
+  "seconds": 570,
+  "views": 9025,
+  "channel": "Peter Pru",
+  "title": "Stop Rolling Covered Calls (Do THIS Instead)"
+ },
+ "M6UdyEezdWE": {
+  "status": "OK",
+  "seconds": 558,
+  "views": 9574,
+  "channel": "Jake Broe",
+  "title": "Pin Risk Explained - Always Close When Trading Options!!"
+ },
+ "ME-Xq4fa3Mw": {
+  "status": "OK",
+  "seconds": 331,
+  "views": 33868,
+  "channel": "韭菜們的救贖",
+  "title": "【5分鐘破解投顧話術！】老師真的那麼神?"
+ },
+ "McEJqzLqR0E": {
+  "status": "OK",
+  "seconds": 273,
+  "views": 10119,
+  "channel": "tradeoptions4living",
+  "title": "IB 盈透證券 (interactive broker) 選擇權下單示範教學/選擇權交易/選擇權期貨"
+ },
+ "MiybniIIvx0": {
+  "status": "OK",
+  "seconds": 451,
+  "views": 5191188,
+  "channel": "Sky View Trading",
+  "title": "Options Trading: Understanding Option Prices"
+ },
+ "OnUsu1y1W9w": {
+  "status": "OK",
+  "seconds": 1066,
+  "views": 113540,
+  "channel": "Option Alpha",
+  "title": "Options Expiration & Assignment - Options Mechanics - Options Trading For Beginners"
+ },
+ "OshRdPpJ9qc": {
+  "status": "OK",
+  "seconds": 583,
+  "views": 105082,
+  "channel": "异界番茄说",
+  "title": "期权量价关系如何解读？成交量与未平仓量怎么看？Volume and Open Interest? 秒懂期权系列（4）（字幕点击cc）"
+ },
+ "Ra7rJlQwEOs": {
+  "status": "OK",
+  "seconds": 503,
+  "views": 19774,
+  "channel": "老鲁随笔—美股期權交易",
+  "title": "美股期權交易：秒懂希腊字母Delta，告别亏损！#期权交易 option delta"
+ },
+ "Sh9vfbc63iU": {
+  "status": "OK",
+  "seconds": 257,
+  "views": 11966,
+  "channel": "Option Alpha",
+  "title": "Iron Condor Pricing & Probability: Is Wider Better?"
+ },
+ "UePNSAB-cd4": {
+  "status": "OK",
+  "seconds": 315,
+  "views": 22186,
+  "channel": "Options Trading IQ",
+  "title": "🚨 Stop Selling Cash Secured Puts (This Strategy is Better) 🚨"
+ },
+ "V_qQ-m71ruw": {
+  "status": "OK",
+  "seconds": 550,
+  "views": 28238,
+  "channel": "專職人生 Old Wu",
+  "title": "選擇權基礎教學新手必看(買方::風險有限獲利無限==賣方::風險無限獲利有限)"
+ },
+ "VunSjw7JpuM": {
+  "status": "OK",
+  "seconds": 338,
+  "views": 110426,
+  "channel": "tastylive",
+  "title": "Iron Condors: Options Strategy Management"
+ },
+ "WJrut00Owmw": {
+  "status": "OK",
+  "seconds": 982,
+  "views": 10317,
+  "channel": "PowerUpGammas",
+  "title": "美股期权 · 期权希腊字母 探究Theta的时间损耗 | Ultimate Guide to Option Greeks: Visualizing Theta"
+ },
+ "WQt-3StLaFU": {
+  "status": "OK",
+  "seconds": 492,
+  "views": 29104,
+  "channel": "Markus Heitkoetter - Investor & Lifelong Learner",
+  "title": "What's The Difference Between Cash Covered And Naked Puts?"
+ },
+ "Xtm8lUeG1eQ": {
+  "status": "OK",
+  "seconds": 552,
+  "views": 27036,
+  "channel": "tastylive",
+  "title": "Getting Options Filled | Options Trading Concepts"
+ },
+ "YCACBAsAp38": {
+  "status": "OK",
+  "seconds": 382,
+  "views": 16854,
+  "channel": "Options Trading IQ",
+  "title": "The Best Strike (Delta) and DTE for Selling Puts (A Clear Framework)"
+ },
+ "Yu27K3KB2Wo": {
+  "status": "OK",
+  "seconds": 249,
+  "views": 29113,
+  "channel": "Option Alpha",
+  "title": "American vs. European Style Options - Options Adjustments - Options Mechanics"
+ },
+ "_1TLCCHsKKc": {
+  "status": "OK",
+  "seconds": 438,
+  "views": 97519,
+  "channel": "More Money Less Problems",
+  "title": "Why I DON'T Use the Wheel Strategy (and why you shouldn't either)"
+ },
+ "_NS7cWO16SI": {
+  "status": "OK",
+  "seconds": 844,
+  "views": 77322,
+  "channel": "我要做富翁",
+  "title": "不懂止蝕，贏都變輸！什麼是2%法則？風險管理入門班 【施傅教學】#止損 #風險回報比 #投資新手 #2% Rule"
+ },
+ "_hvNT0CNRLE": {
+  "status": "OK",
+  "seconds": 924,
+  "views": 8072,
+  "channel": "永豐金證券",
+  "title": "【選擇權教學】選擇權是什麼？怎麼買？一次搞懂買權、賣權、四種選擇權交易策略與獲利關鍵！"
+ },
+ "ab1V43DxfgI": {
+  "status": "OK",
+  "seconds": 582,
+  "views": 24343,
+  "channel": "Markus Heitkoetter - Investor & Lifelong Learner",
+  "title": "Get Paid to Wait: The Wheel Strategy Explained in 10 Minutes"
+ },
+ "cPrr8QcoPl0": {
+  "status": "OK",
+  "seconds": 241,
+  "views": 81569,
+  "channel": "Profits Run",
+  "title": "Bill Poulos & Profits Run Present: Options Trading Risk Management Formula (How Much To Trade)"
+ },
+ "dqAsQyRJHAg": {
+  "status": "OK",
+  "seconds": 1037,
+  "views": 185721,
+  "channel": "Terry Chen 泰瑞",
+  "title": "一次搞懂選擇權（期權）"
+ },
+ "e1lfLNr_CMI": {
+  "status": "OK",
+  "seconds": 370,
+  "views": 12797,
+  "channel": "PowerUpGammas",
+  "title": "期权新手误区系列 - 热衷使用深度虚值期权 Obssessed in Trading Deep OTM Options (Option Noob Mistake Series)"
+ },
+ "e2CD8LzdZAI": {
+  "status": "OK",
+  "seconds": 572,
+  "views": 7100,
+  "channel": "Option Alpha",
+  "title": "Picking The Wrong Stock Is Costing You $3,840 Per Year (Bid Ask Spread)"
+ },
+ "e4vvDpSzBP8": {
+  "status": "OK",
+  "seconds": 331,
+  "views": 11109,
+  "channel": "不預測漲跌",
+  "title": "學2個取代裸賣的高效率方式。選擇權交易我超不建議裸賣，有到\"超\"的程度。快把裸賣收租留結算的危險又過時觀念丟掉！"
+ },
+ "eDjMJ5_NZ-U": {
+  "status": "OK",
+  "seconds": 926,
+  "views": 10636,
+  "channel": "tradeoptions4living",
+  "title": "選擇權教學(14) - Covered Call 掩護性買權策略 之一"
+ },
+ "eW_WPyXJ85Y": {
+  "status": "OK",
+  "seconds": 433,
+  "views": 7315,
+  "channel": "Tactical Income",
+  "title": "Which Are Better? Wide or Narrow Verticals?"
+ },
+ "eWeGAYvjxh4": {
+  "status": "OK",
+  "seconds": 715,
+  "views": 36784,
+  "channel": "TheOneLanceB",
+  "title": "How to Sell Options Like a Wall Street Trader (My 4 Golden Rules)"
+ },
+ "f0V7gkaDvzQ": {
+  "status": "OK",
+  "seconds": 724,
+  "views": 13032,
+  "channel": "工程師Joseph - 理財揪舒服",
+  "title": "【CC字幕】Covered call 漲超過履約價了怎麼辦： 聊聊我的幾種應對方式【期權操作】【Jo來聊美股】"
+ },
+ "fAriflX_VLw": {
+  "status": "OK",
+  "seconds": 479,
+  "views": 9535,
+  "channel": "由傻散變大師 - 生活理財頻道",
+  "title": "【期權教學】基本期權認識 - 期權四式 - Long Put Short Put｜股票入門｜新手教學｜投機｜由傻散變大師"
+ },
+ "fDLJlU8OdP8": {
+  "status": "OK",
+  "seconds": 459,
+  "views": 102427,
+  "channel": "Zerodha Varsity",
+  "title": "9. Theta"
+ },
+ "fFaW9OENf8c": {
+  "status": "OK",
+  "seconds": 581,
+  "views": 16749,
+  "channel": "tastylive",
+  "title": "What Is The Right DTE?  … We Tested It To Find Out"
+ },
+ "fqtUvYEYyHE": {
+  "status": "OK",
+  "seconds": 359,
+  "views": 31686,
+  "channel": "曉士投資理財教室",
+  "title": "[投資教學]你的第一個風險管理課_2%Rule_課堂五十"
+ },
+ "g-pyFTXuCBc": {
+  "status": "OK",
+  "seconds": 1036,
+  "views": 9414,
+  "channel": "PowerUpGammas",
+  "title": "期权希腊字母指南[2021年] 下集 | Complete Guide for Option Greeks: Delta, Theta, Gamma, Vega and Rho, pt 2"
+ },
+ "hTWTW4S8u-M": {
+  "status": "OK",
+  "seconds": 595,
+  "views": 32977,
+  "channel": "tastylive",
+  "title": "What Is Dividend Risk? | Options Trading Concepts"
+ },
+ "iJ191xHOXVg": {
+  "status": "OK",
+  "seconds": 1211,
+  "views": 173884,
+  "channel": "Nick 美股咖啡館",
+  "title": "（含金量破表）你唯一須要的期權策略：我如何每週穩定獲利$500美元？學會了一生受用！"
+ },
+ "ih5VMCN6biQ": {
+  "status": "OK",
+  "seconds": 560,
+  "views": 14400,
+  "channel": "Ryan O'Connell, CFA, FRM",
+  "title": "The Bear Call Spread Option Strategy Explained"
+ },
+ "j7RMw35R5N0": {
+  "status": "OK",
+  "seconds": 376,
+  "views": 15626,
+  "channel": "斜槓投資達人",
+  "title": "你真的不該再繼續賣Covered Call的"
+ },
+ "jMe2wlHMHUw": {
+  "status": "OK",
+  "seconds": 585,
+  "views": 79558,
+  "channel": "微學we-share",
+  "title": "新手入門選擇權！超簡單讓你搞懂基本規則【交易肯爺】"
+ },
+ "jaqNJkLz1QU": {
+  "status": "OK",
+  "seconds": 556,
+  "views": 18087,
+  "channel": "富翁電視MTTV",
+  "title": "雙贏賺錢法！如何用Short Put 優質股票撈底+穩定收租，實現穩定被動收入！留意風險｜期權基本四式 【期權收租寶｜新手指南】 EP５ #投資 #小寶"
+ },
+ "jy4k_GVLEko": {
+  "status": "OK",
+  "seconds": 1044,
+  "views": 1753774,
+  "channel": "ImanTrading",
+  "title": "The 1 Video to Expose EVERY Trading Guru & how to spot a fraud"
+ },
+ "ko7NeS4xHS8": {
+  "status": "OK",
+  "seconds": 498,
+  "views": 158717,
+  "channel": "InTheMoney",
+  "title": "The BID-ASK in Trading Options can Make or Break Ya | Adam Answers Episode 3 | InTheMoney"
+ },
+ "koJQc3fqxjk": {
+  "status": "OK",
+  "seconds": 352,
+  "views": 119376,
+  "channel": "Zerodha Varsity",
+  "title": "8. Gamma"
+ },
+ "lOQRJKuhCfM": {
+  "status": "OK",
+  "seconds": 299,
+  "views": 13359,
+  "channel": "Option Alpha",
+  "title": "Iron Condor Profit Calculation"
+ },
+ "ltymRp3mCKU": {
+  "status": "OK",
+  "seconds": 162,
+  "views": 16051,
+  "channel": "Ally",
+  "title": "Options Trading Mistake #8: Legging into Spreads"
+ },
+ "m4q1Wz2TYF4": {
+  "status": "OK",
+  "seconds": 482,
+  "views": 20916,
+  "channel": "Jake Broe",
+  "title": "Do Not Exercise Options Early - Here is Why"
+ },
+ "m6trgYT842g": {
+  "status": "OK",
+  "seconds": 574,
+  "views": 14253,
+  "channel": "不預測漲跌",
+  "title": "2023 選擇權策略 Iron Condor 隆重回歸！了解2種型態和3種建倉方式"
+ },
+ "mA45DklHSxY": {
+  "status": "OK",
+  "seconds": 459,
+  "views": 31899,
+  "channel": "投資好朋友 BOS價值投資",
+  "title": "投資美股必看！4點告訴你複委託、海外券商怎麼選！複委託沒有比較安全？海外券商更有保障？｜BOS巴菲特線上學院 Buffett Online School"
+ },
+ "mg8w8z-okis": {
+  "status": "OK",
+  "seconds": 907,
+  "views": 75012,
+  "channel": "Money Manta的投资频道",
+  "title": "为何财报过后期权会被多空双杀？隐含波动率是什么？如何通过卖出naked put赚钱？"
+ },
+ "n9qelKBQBZQ": {
+  "status": "OK",
+  "seconds": 232,
+  "views": 113972,
+  "channel": "Investopedia",
+  "title": "Bull Call Spread | Investopedia"
+ },
+ "nOBetz3OJo0": {
+  "status": "OK",
+  "seconds": 570,
+  "views": 5873,
+  "channel": "追日Gucci-AI效率革命聯盟",
+  "title": "美股選擇權 - 如何快速做Covered Call轉倉呢?以讓價差空間越來越大"
+ },
+ "nv-zw58STnI": {
+  "status": "OK",
+  "seconds": 273,
+  "views": 26083,
+  "channel": "JK爸爸的投資頻道",
+  "title": "【期權新手教學 EP 2】 4分鐘快速解構期權3大術語：時間值、價內值、波幅值｜絕密揭秘一日速賺40萬利潤的期權策略｜獨立股評人 JK爸爸陳立展｜#期權 #投資 #投資教學"
+ },
+ "q_lu0WMlpq0": {
+  "status": "OK",
+  "seconds": 797,
+  "views": 7018,
+  "channel": "Hedge is King",
+  "title": "對沖王道｜第十六集｜期權基礎知識懶人包｜期權參數｜希臘參數的應用｜Greeks"
+ },
+ "q_raK2GQeXk": {
+  "status": "OK",
+  "seconds": 791,
+  "views": 18249,
+  "channel": "Nick 美股咖啡館",
+  "title": "每月「零風險」2-4%穩定現金獲利？！ 最實用的選擇權策略：Sell Put"
+ },
+ "rQCGfzwLwMg": {
+  "status": "OK",
+  "seconds": 460,
+  "views": 14106,
+  "channel": "不預測漲跌",
+  "title": "2022選擇權『價差單教學』3個建議＋3注意事項"
+ },
+ "uSMTToUGjno": {
+  "status": "OK",
+  "seconds": 519,
+  "views": 10625,
+  "channel": "OP投資理財學院",
+  "title": "[選擇權策略🔍]買進買權、買進賣權 | Long Call and Long Put"
+ },
+ "uhs0mOWa75k": {
+  "status": "OK",
+  "seconds": 518,
+  "views": 6804,
+  "channel": "無業的阿海",
+  "title": "何謂引伸波幅/隱含波幅(Implied Volatility)? 想玩期權玩得好 必學"
+ },
+ "umvb_gAazrw": {
+  "status": "OK",
+  "seconds": 544,
+  "views": 7430,
+  "channel": "Buy Borrow Die",
+  "title": "The EASIEST Way To Track Wheel Strategy Trades"
+ },
+ "v846B7hs9xg": {
+  "status": "OK",
+  "seconds": 582,
+  "views": 209693,
+  "channel": "InTheMoney",
+  "title": "3 Ways to Avoid IV Crush | Why Your Calls Lose Money When the Stock Goes Up"
+ },
+ "vCKAPhyyqAU": {
+  "status": "OK",
+  "seconds": 522,
+  "views": 6413,
+  "channel": "Options Trading IQ",
+  "title": "The Exact Strike and DTE Framework for Selling Covered Calls"
+ },
+ "vrxcifb83UM": {
+  "status": "OK",
+  "seconds": 523,
+  "views": 60190,
+  "channel": "Option Alpha",
+  "title": "How To Calculate The Expected Move Of A Stock"
+ },
+ "w8yWprIeHf0": {
+  "status": "OK",
+  "seconds": 391,
+  "views": 5020,
+  "channel": " 阿福聊投资",
+  "title": "我最爱的鹰式期权策略 Iron Condor｜新手必备"
+ },
+ "wHzK35QZ6WQ": {
+  "status": "OK",
+  "seconds": 483,
+  "views": 125922,
+  "channel": "The Retirement Income Investor",
+  "title": "Fidelity Option Chain: EVERYTHING You Need to Know!"
+ },
+ "wwceg3LYKuA": {
+  "status": "OK",
+  "seconds": 327,
+  "views": 73878,
+  "channel": "Fidelity Investments",
+  "title": "Option Selling Strategies: Covered Calls Explained | Fidelity Investments"
+ },
+ "xrRsDPUA544": {
+  "status": "OK",
+  "seconds": 332,
+  "views": 36190,
+  "channel": "异界番茄说",
+  "title": "期权损益图, 看涨期权的损益曲线,  看跌期权的损益曲线 - 5分钟带你学会 （秒懂期权教学系列）"
+ },
+ "yRUDAtVL74w": {
+  "status": "OK",
+  "seconds": 220,
+  "views": 14365,
+  "channel": "Outlier Trading",
+  "title": "IV Rank (IVR) vs IV Percentile (IVP) | Thinkorswim (tos) is WRONG"
+ },
+ "zekoBDUHTR8": {
+  "status": "OK",
+  "seconds": 462,
+  "views": 29550,
+  "channel": "Markus Heitkoetter - Investor & Lifelong Learner",
+  "title": "Option Assignment Risk Explained - Everything You Need To Know"
+ }
+}
