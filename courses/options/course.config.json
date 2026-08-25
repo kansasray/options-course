@@ -1,0 +1,390 @@
+{
+  "$schema": "../../src/build/course.schema.json",
+  "frameworkVersion": "2.0.0",
+  "site": {
+    "project": "options-course",
+    "name": "美股選擇權:先看懂損益圖,再談以小博大",
+    "url": "https://options-course.pages.dev",
+    "locale": "zh-Hant",
+    "ogLocale": "zh_TW",
+    "brandIcon": "trending-up",
+    "title": "美股選擇權:先看懂損益圖,再談以小博大 — 24 個單元、每個策略一張圖",
+    "description": "選擇權是被行銷話術包裝最厚的金融工具。這門課九章 24 個單元,從四個基本部位一路到 covered call、sell put、價差與風險管理,每個策略都配一張自繪損益圖,先看懂再動手。課程收錄兩位實務操作者(Gozilla、Led)的保守賣方框架:參數、流程與紀律引自公開貼文並標明出處,績效自述照實標為未驗證。首頁三條立場全部掛同儕審查文獻:權利金是風險補償、散戶選擇權的實證績效、以小博大的真實數學。",
+    "ogDescription": "九章 24 個單元、每個策略一張損益圖。收錄兩位實務操作者的保守賣方框架,立場頁全掛同儕審查文獻:權利金不是免費午餐,以小博大要先算機率。",
+    "keywords": [
+      "美股選擇權",
+      "選擇權教學",
+      "covered call",
+      "sell put",
+      "損益圖",
+      "隱含波動率",
+      "價差策略",
+      "風險管理"
+    ],
+    "audience": "想看懂選擇權再決定要不要碰的人、已經在做 covered call 或 sell put 但說不出參數理由的人、被「月入 X%」廣告燒到的人",
+    "about": [
+      "美股選擇權",
+      "選擇權定價",
+      "賣方策略",
+      "風險管理",
+      "投資人行為"
+    ],
+    "learningResourceType": [
+      "影片課程",
+      "損益圖解",
+      "策略拆解"
+    ]
+  },
+  "hero": {
+    "eyebrow": "自學課程",
+    "heading": "先看懂損益圖,再談以小博大",
+    "lede": "九個章節、24 個單元、{videos} 支不重複影片,每個策略都配一張損益圖。課程收錄 Gozilla 與 Led 兩位的保守賣方框架:不裸賣、不下滿、小賺就平倉。引文標明出處,績效自述照實標為未驗證。"
+  },
+  "ui": {
+    "searchPlaceholder": "搜尋單元、策略或名詞…",
+    "tabs": {
+      "course": "課程內容",
+      "player": "上課模式",
+      "stance": "這門課的立場"
+    },
+    "progressLabel": "學習進度",
+    "facetLabel": "依主題篩選",
+    "assessmentLabel": "怎麼確認自己真的懂了",
+    "tightLabel": "常見的錯誤做法",
+    "weakLabel": "應該建立的紀律",
+    "lessonLabel": "主課",
+    "drillEvidenceLabel": "這類主張的查核",
+    "unitEvidenceLabel": "查核結果",
+    "stats": [
+      {
+        "icon": "layers",
+        "field": "lesson_units",
+        "label": "個單元"
+      },
+      {
+        "icon": "clock",
+        "field": "duration",
+        "label": "課程時長"
+      },
+      {
+        "icon": "video",
+        "field": "drill_units",
+        "label": "支延伸影片"
+      },
+      {
+        "icon": "microscope",
+        "field": "evidence_checked",
+        "label": "題主張查核"
+      }
+    ],
+    "unitTypes": {
+      "concept": "觀念",
+      "practice": "實作",
+      "guide": "說明"
+    },
+    "evidenceRows": [
+      {
+        "field": "claim",
+        "label": "常聽到的說法"
+      },
+      {
+        "field": "evidence_says",
+        "label": "實證研究怎麼說"
+      },
+      {
+        "field": "applies_when",
+        "label": "什麼條件下成立"
+      },
+      {
+        "field": "summary",
+        "label": "摘要"
+      },
+      {
+        "field": "red_flags",
+        "label": "看到這些就該警覺",
+        "type": "flags"
+      },
+      {
+        "field": "caveats",
+        "label": "課程須誠實告知"
+      }
+    ],
+    "problemType": "practice",
+    "facetClear": "清除主題篩選",
+    "facetPrefix": "主題",
+    "emptyTitle": "找不到符合的內容",
+    "emptyHint": "換個關鍵字或清除主題篩選再試一次。",
+    "playlistSearch": "搜尋播放清單…",
+    "prevLabel": "上一部影片",
+    "nextLabel": "下一部影片",
+    "doneLabel": "完成",
+    "openExternal": "在 YouTube 開啟",
+    "moreLabel": "選片理由與自我檢核",
+    "missingTitle": "尚未找到合格影片",
+    "missingHint": "這一格查過了但沒有夠好的片。理由寫在下面,找到會補上。",
+    "lessonNoun": "堂主課",
+    "drillNoun": "支延伸影片",
+    "drillNounShort": "支影片",
+    "kindFilterLabel": "影片類型篩選",
+    "evidenceSource": "同儕審查財金文獻",
+    "evidenceSourceLink": "看原始論文",
+    "filterAllLabel": "全部"
+  },
+  "kinds": [
+    {
+      "id": "explainer",
+      "label": "觀念",
+      "tone": "accent"
+    },
+    {
+      "id": "walkthrough",
+      "label": "手把手",
+      "tone": "success"
+    },
+    {
+      "id": "replay",
+      "label": "實例復盤",
+      "tone": "attention"
+    }
+  ],
+  "grades": [
+    {
+      "id": "empirical",
+      "label": "實證支持",
+      "tone": "success"
+    },
+    {
+      "id": "principle",
+      "label": "定義上成立",
+      "tone": "accent"
+    },
+    {
+      "id": "mixed",
+      "label": "結果分歧",
+      "tone": "attention"
+    },
+    {
+      "id": "unverified",
+      "label": "無法驗證",
+      "tone": "danger"
+    }
+  ],
+  "evidence": {
+    "designTiers": {
+      "peer-reviewed-study": 1,
+      "index-data": 2,
+      "replication": 2,
+      "working-paper": 3,
+      "practitioner-report": 4,
+      "self-reported": 5
+    },
+    "gradeRequires": {
+      "empirical": 1,
+      "mixed": 2
+    },
+    "maxAgeYears": {
+      "empirical": 30,
+      "mixed": 30
+    },
+    "requireCaveats": [
+      "mixed",
+      "unverified"
+    ],
+    "minCaveatChars": 40
+  },
+  "chapters": [
+    {
+      "code": "CH1",
+      "title": "選擇權是什麼:四個基本部位",
+      "icon": "book-open",
+      "source": "ch1",
+      "units": 3,
+      "drills": 12
+    },
+    {
+      "code": "CH2",
+      "title": "權利金:時間價值與 IV",
+      "icon": "calculator",
+      "source": "ch2",
+      "units": 3,
+      "drills": 11
+    },
+    {
+      "code": "CH3",
+      "title": "Greeks:看得懂就好",
+      "icon": "gauge",
+      "source": "ch3",
+      "units": 2,
+      "drills": 8
+    },
+    {
+      "code": "CH4",
+      "title": "到期、履約與指派",
+      "icon": "clock",
+      "source": "ch4",
+      "units": 2,
+      "drills": 5
+    },
+    {
+      "code": "CH5",
+      "title": "Covered Call:Gozilla 的主策略",
+      "icon": "layers",
+      "source": "ch5",
+      "units": 3,
+      "drills": 11
+    },
+    {
+      "code": "CH6",
+      "title": "Sell Put 與 Wheel:Led 的主策略",
+      "icon": "repeat",
+      "source": "ch6",
+      "units": 3,
+      "drills": 12
+    },
+    {
+      "code": "CH7",
+      "title": "價差與中性策略",
+      "icon": "activity",
+      "source": "ch7",
+      "units": 3,
+      "drills": 12
+    },
+    {
+      "code": "CH8",
+      "title": "下單、倉位與風險",
+      "icon": "wrench",
+      "source": "ch8",
+      "units": 3,
+      "drills": 12
+    },
+    {
+      "code": "CH9",
+      "title": "兩位的共同框架與誠實界線",
+      "icon": "users",
+      "source": "ch9",
+      "units": 2,
+      "drills": 5
+    }
+  ],
+  "evidenceAlias": {
+    "ch5-u1": "concept-1",
+    "ch8-u2": "concept-2",
+    "ch2-u3": "concept-3"
+  },
+  "nav": [
+    {
+      "title": "地基",
+      "chapters": [
+        "CH1",
+        "CH2",
+        "CH3",
+        "CH4"
+      ]
+    },
+    {
+      "title": "賣方雙策略",
+      "chapters": [
+        "CH5",
+        "CH6"
+      ]
+    },
+    {
+      "title": "進階與實務",
+      "chapters": [
+        "CH7",
+        "CH8"
+      ]
+    },
+    {
+      "title": "框架與界線",
+      "chapters": [
+        "CH9"
+      ]
+    }
+  ],
+  "landing": {
+    "howTitle": "怎麼用這門課",
+    "steps": [
+      {
+        "icon": "eye",
+        "title": "每個策略先看圖",
+        "body": "四個基本部位、covered call、sell put、價差,每個策略都有一張自繪損益圖。橫軸是股價,縱軸是損益,獲利區綠色、虧損區紅色。看不懂圖之前不要下單,這是全課唯一的鐵則。"
+      },
+      {
+        "icon": "calculator",
+        "title": "再學會算兩個數",
+        "body": "權利金裡有多少是時間價值、這筆交易最多賠多少。第二章與第八章反覆練這兩個數,因為新手虧損的多數案例,都是下單前沒算過其中一個。"
+      },
+      {
+        "icon": "shield-alert",
+        "title": "參考實務者,但別複製收益",
+        "body": "課程收錄 Gozilla 與 Led 的參數與流程,引文標明出處。他們的績效數字是本人自述、課程無法驗證,而且觀察窗口只有幾個月。學紀律,不要學損益截圖。"
+      }
+    ],
+    "stanceTitle": "開始之前,先看三條實證",
+    "stanceLede": "選擇權圈的行銷話術密度是所有金融商品裡最高的。這三條主張我們拿去對照同儕審查的財金文獻,結論寫在下面,包括對賣方策略不利的部分。",
+    "chaptersTitle": "九個章節,從損益圖到風險紀律",
+    "ctaTitle": "準備好就開始",
+    "ctaLede": "24 個單元、{videos} 支影片,全部免費。進度存在你自己的瀏覽器裡,沒有帳號、沒有後端、不賣課也不喊單。"
+  },
+  "stance": {
+    "title": "這門課的立場",
+    "intro": "「穩定現金流」「以小博大」「月入 3%」,選擇權的每一句廣告詞背後都有一個沒被說出口的代價。這門課開頭先把三個最常見的主張拿出來,對照同儕審查的財金文獻。每一條結論都附得到原始論文,你可以自己去查。",
+    "verdicts": {
+      "concept-1": "賣方權利金是承擔尾部風險的補償,不是免費午餐:covered call 的「穩定收入」以放棄上檔與吃下檔為代價。",
+      "concept-2": "散戶選擇權交易的實證績效顯著落後:研究一致指向交易成本與擇時是主因,不是策略名稱。",
+      "concept-3": "「以小博大」貴的不是權利金,是機率:價外選擇權系統性偏貴,買方的長期期望值多為負。"
+    },
+    "outroTitle": "所以這門課的定位是什麼?",
+    "outro": "選擇權是**風險轉移工具**:它把某種風險從一方移到另一方,並為此定價。用得好,它讓你用可計算的代價換取確定性;用不好,它是財富從沒算過機率的人流向算過的人的管道。這門課教你看懂損益圖、算出最大損失、理解權利金的組成;兩位實務者示範的是紀律,不是保證。**本課程為教育內容,不構成投資建議**,任何交易決策與其後果由你自己承擔。",
+    "keyPrefix": "concept-"
+  },
+  "footer": {
+    "disclaimer": "**免責聲明。**本課程為教育內容,**不構成投資建議**。選擇權具高風險:買方可能損失全部權利金;未持有標的或未定義風險的賣方,損失可能遠大於收到的權利金。課程引用之兩位創作者(Gozilla、Led)策略均取自其公開 Threads 貼文並標明出處,僅為作法示範,非其本人或本課程之投資推薦;其績效數字為本人自述,課程無法驗證。交易前請確認自身券商之選擇權權限層級與台灣複委託之商品限制,並自行評估風險承受能力。",
+    "credits": "影片為 YouTube 上第三方創作者的作品,版權歸原頻道所有,本站僅提供連結。損益圖為本課程自繪。"
+  },
+  "llms": {
+    "summary": "這是一門免費的線上自學課程,教美股選擇權的基礎與保守賣方策略,特色是每個策略配一張自繪損益圖。涵蓋 {lessonUnits} 個單元、{videos} 支 YouTube 影片,合計 [[durationHours]] 小時 [[durationMinutes]] 分。課程收錄兩位實務操作者的參數與流程(引自公開貼文、標明出處、績效自述未驗證)。所有影片皆為第三方頻道作品,本站僅提供策展與連結。",
+    "stanceTitle": "這門課的立場",
+    "stanceIntro": "課程開頭把 {evidence} 個最常見的選擇權行銷主張對照同儕審查財金文獻,結果照實呈現:",
+    "stanceItem": "**[[name]]**([[grade]]):[[summaryShort]]",
+    "stanceConclusion": "選擇權是風險轉移工具。課程教損益圖、最大損失與權利金組成;示範的是紀律,不是保證。非投資建議。",
+    "chaptersTitle": "章節",
+    "chapterItem": "**[[code]] [[title]]**:[[units]]",
+    "unitSeparator": "、",
+    "disclaimerTitle": "免責聲明",
+    "disclaimer": "本課程為教育內容,不構成投資建議。選擇權買方可能損失全部權利金,未定義風險的賣方損失可能遠大於權利金。引用之創作者策略僅為作法示範,績效為本人自述、未經驗證。",
+    "footer": "完整課程:[[url]]"
+  },
+  "audit": {
+    "duration": {
+      "lesson": {
+        "min": "4:00",
+        "max": "40:00"
+      },
+      "drill": {
+        "min": "1:00",
+        "max": "60:00"
+      }
+    },
+    "driftSeconds": 30,
+    "minViews": 5000,
+    "metaCoverage": 1,
+    "drillsPerUnit": {
+      "min": 2,
+      "max": 6
+    },
+    "maxSharedVideos": 20,
+    "requireAssessment": [
+      "concept",
+      "practice"
+    ],
+    "minAssessmentChars": 80,
+    "minCitations": 2,
+    "allowMissingUrls": 8,
+    "maxChannelShare": 0.15,
+    "copyStyle": {
+      "maxDashRatio": 0.05
+    }
+  }
+}
