@@ -231,7 +231,7 @@
       "icon": "layers",
       "source": "ch5",
       "units": 3,
-      "drills": 11
+      "drills": 10
     },
     {
       "code": "CH6",
@@ -239,7 +239,7 @@
       "icon": "repeat",
       "source": "ch6",
       "units": 3,
-      "drills": 12
+      "drills": 11
     },
     {
       "code": "CH7",
@@ -255,7 +255,7 @@
       "icon": "wrench",
       "source": "ch8",
       "units": 3,
-      "drills": 12
+      "drills": 10
     },
     {
       "code": "CH9",

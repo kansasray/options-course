@@ -1,5 +1,227 @@
 {
  "chapter": "CH7",
  "title": "價差與中性策略",
- "units": []
+ "units": [
+  {
+   "id": "ch7-u1",
+   "name": "垂直價差:把風險畫成一個盒子",
+   "type": "practice",
+   "assessment": "開一個券商模擬帳戶（或紙上作業），不看影片自組一組賣權多頭價差：賣出較高履約價 put、買進較低履約價 put。先自己算出三個數：最大獲利＝收取的淨權利金、最大損失＝履約價寬度減淨權利金、兩平點＝較高履約價減淨權利金，再與券商下單頁顯示的數字對照，三個全對才算過關。接著做寬窄對照實驗：同標的同到期，分別組一組窄價差（如 5 點寬）與一組寬價差（如 20 點寬），抄下各自收到的權利金與最大損失，親手驗證「寬盒子收較多權利金、但最大損失也按比例放大」；最後把 put 換成 call 組一組買權空頭價差，確認損益圖與賣權多頭價差呈鏡像。",
+   "tight": [
+    "垂直價差總覽（繁中、簡中、英文候選都多，主課有得挑）",
+    "bull put / bear call 的英文專講（同頻道成對，記號一致）",
+    "履約價寬窄取捨有標題直接命中的專講（Wide or Narrow Verticals）"
+   ],
+   "weak": [
+    "30-600 秒區間內查無繁中/簡中的 bull put 或 bear call 專講合格片（中文查詢只回總覽片，與主課重複），四支動作影片全為英文",
+    "「三個數」查無單支涵蓋最大獲利+最大損失+兩平點的信用價差版；Option Alpha 把三個數拆成三支短片，最終用 Investopedia 的借方價差例替代",
+    "「期权 价差 最大盈利 最大亏损」與「bull put spread 教學」兩查詢符合數為 0，中文計算類短片是明顯缺口"
+   ],
+   "lesson": {
+    "name": "垂直價差總覽:把風險畫成一個盒子",
+    "en": "Vertical spreads overview: boxing your risk with spread orders",
+    "kind": "explainer",
+    "target": "垂直價差、價差單、多頭價差、空頭價差、風險上限、損益圖",
+    "dose": "完整看一次；第二次只重看損益圖與組單段落，邊看邊在紙上畫出多頭與空頭價差各一張損益圖",
+    "title": "快速學會選擇權策略單！行情不管小漲小跌我通殺！選擇權價差單最速上手",
+    "channel": "KeensPie群益期貨金牌團隊",
+    "url": "https://www.youtube.com/watch?v=KC7Pzz0EcDI",
+    "duration": "18:40",
+    "why": "繁中、台指選擇權實務情境，同一支涵蓋小漲小跌兩個方向的價差單組法與損益結構，正好對應本單元「風險框成盒子」的核心；1120 秒在主課區間內，觀看數 6.1 萬是繁中候選中最高。簡中候選（老鲁隨筆 928s/3.8萬）品質相當但語言優先序落後。"
+   },
+   "drills": [
+    {
+     "name": "Bull Put Spread 結構與損益圖:賣權多頭價差入門",
+     "en": "Bull put spread structure and payoff diagram",
+     "kind": "explainer",
+     "target": "Bull Put Spread、賣權多頭價差、信用價差、損益圖、最大獲利、最大損失",
+     "dose": "看一次，中途暫停自己先畫損益圖再對答案；看完口述一次「賣高買低」的兩腳結構",
+     "title": "Bull Put Spread Strategy Explained | Vertical Spreads & Credit Spreads",
+     "channel": "Ryan O'Connell, CFA, FRM",
+     "url": "https://www.youtube.com/watch?v=51l6HFcvl70",
+     "duration": "9:09"
+    },
+    {
+     "name": "Bear Call Spread 結構與損益圖:買權空頭價差入門",
+     "en": "Bear call spread structure and payoff diagram",
+     "kind": "explainer",
+     "target": "Bear Call Spread、買權空頭價差、信用價差、損益圖、方向判斷",
+     "dose": "看一次；與上一支同頻道同記號系統，看完把兩張損益圖並排畫出來，指出鏡像關係",
+     "title": "The Bear Call Spread Option Strategy Explained",
+     "channel": "Ryan O'Connell, CFA, FRM",
+     "url": "https://www.youtube.com/watch?v=ih5VMCN6biQ",
+     "duration": "9:21"
+    },
+    {
+     "name": "垂直價差三個數:最大獲利、最大損失、兩平點的算法",
+     "en": "The three numbers of a vertical spread: max profit, max loss, breakeven",
+     "kind": "walkthrough",
+     "target": "最大獲利、最大損失、兩平點、履約價寬度、淨權利金",
+     "dose": "跟著影片的數字例暫停自算三個數再核對；算完把同一套公式換到賣方價差（信用價差）再算一次",
+     "title": "Bull Call Spread | Investopedia",
+     "channel": "Investopedia",
+     "url": "https://www.youtube.com/watch?v=n9qelKBQBZQ",
+     "duration": "3:52"
+    },
+    {
+     "name": "履約價寬度與收取權利金的取捨:寬盒子還是窄盒子",
+     "en": "Strike width vs. premium collected: wide box or narrow box",
+     "kind": "explainer",
+     "target": "履約價寬度、權利金、風險報酬比、勝率、履約價選擇",
+     "dose": "看一次；看完用同標的同到期自組 5 點寬與 20 點寬各一組模擬單，抄下權利金與最大損失做對照表",
+     "title": "Which Are Better? Wide or Narrow Verticals?",
+     "channel": "Tactical Income",
+     "url": "https://www.youtube.com/watch?v=eW_WPyXJ85Y",
+     "duration": "7:14"
+    }
+   ]
+  },
+  {
+   "id": "ch7-u2",
+   "name": "Iron Condor 與中性策略",
+   "type": "practice",
+   "assessment": "打開 OptionStrat 免費網頁版，建一組指數 Iron Condor：先不看軟體，自己在紙上畫損益圖並標出四個履約價、獲利帶與兩個損益兩平點，再開軟體對答案，錯一處就回看 drill 2；接著用「翼寬減收到的權利金」手算最大損失，核對軟體顯示的 max loss 是否一致，並算出賠率（最大損失除以最大獲利），看它是否大於勝率暗示的倍數；最後寫下兩條管理規則（例如獲利達權利金 50% 平倉、被測試側履約價被觸及就調整），隔天不看筆記複誦一次，講不出「為什麼是這兩條」就回看 drill 4。",
+   "tight": [
+    "管理時機：tastylive 339 秒片同時覆蓋提前平倉與調整兩個子題，110k views，是全部候選中命中最完整的一支",
+    "損益圖解讀：Option Alpha 300 秒逐步算 max profit / max loss / 損益兩平，可直接跟算",
+    "主課：繁中有專講 Iron Condor 的完整課（型態＋建倉），不必退到英文"
+   ],
+   "weak": [
+    "「四腳＝兩個 credit spread」沒有中文專講短片過門檻，以簡中新手介紹（392 秒、5020 views 剛過線）覆蓋，讀者需自行做拆解練習補強",
+    "損益圖解讀與風險報酬結構兩題只有英文候選過門檻；繁中同主題片多為泛策略長課或與主課同頻道重複",
+    "管理時機的繁中候選（鐵兀鷹補救策略 319 秒）只覆蓋調整、不含提前平倉，故退用英文片"
+   ],
+   "lesson": {
+    "name": "Iron Condor 主課：兩種型態與三種建倉方式",
+    "en": "Iron Condor: types and entry methods",
+    "kind": "explainer",
+    "target": "Iron Condor、中性策略、部位型態、建倉方式、賣方價差",
+    "dose": "全片看一次；第二次只看損益圖段落，暫停自己畫一遍再對照",
+    "title": "2023 選擇權策略 Iron Condor 隆重回歸！了解2種型態和3種建倉方式",
+    "channel": "不預測漲跌",
+    "url": "https://www.youtube.com/watch?v=m6trgYT842g",
+    "duration": "9:34",
+    "why": "繁中專講 Iron Condor 的完整課，涵蓋兩種型態與三種建倉方式，正好對應本單元「Iron Condor 與中性策略」的主軸；574 秒在主課區間內，14k 觀看是繁中候選裡最高。同批英文候選（Sky View 1.3M views）品質相當，依語言優先序取繁中。"
+   },
+   "drills": [
+    {
+     "name": "Iron Condor 四腳結構：兩個 credit spread 的組合",
+     "en": "Four legs = bull put spread + bear call spread",
+     "kind": "explainer",
+     "target": "四腳結構、credit spread、bull put spread、bear call spread、權利金收入",
+     "dose": "看一次 392 秒；在結構講解處暫停，用紙筆把四腳拆成 bull put spread 與 bear call spread 各兩腳",
+     "title": "我最爱的鹰式期权策略 Iron Condor｜新手必备",
+     "channel": " 阿福聊投资",
+     "url": "https://www.youtube.com/watch?v=w8yWprIeHf0",
+     "duration": "6:32"
+    },
+    {
+     "name": "獲利帶與兩側風險：Iron Condor 損益圖解讀",
+     "en": "Reading the iron condor payoff diagram",
+     "kind": "walkthrough",
+     "target": "損益圖、獲利帶、損益兩平點、最大損失、最大獲利、翼寬",
+     "dose": "跟著影片把最大獲利、最大損失、兩個損益兩平點各手算一遍，再標到自己畫的損益圖上",
+     "title": "Iron Condor Profit Calculation",
+     "channel": "Option Alpha",
+     "url": "https://www.youtube.com/watch?v=lOQRJKuhCfM",
+     "duration": "5:00"
+    },
+    {
+     "name": "勝率高但賠率差：Iron Condor 的風險報酬結構性事實",
+     "en": "High win rate, poor risk-reward: the structural tradeoff",
+     "kind": "explainer",
+     "target": "勝率、賠率、風險報酬比、權利金定價、機率、翼寬取捨",
+     "dose": "看一次 257 秒，寫下「權利金與勝率如何互相牽制」的一句話結論，並用一組實際報價驗算賠率",
+     "title": "Iron Condor Pricing & Probability: Is Wider Better?",
+     "channel": "Option Alpha",
+     "url": "https://www.youtube.com/watch?v=Sh9vfbc63iU",
+     "duration": "4:17"
+    },
+    {
+     "name": "Iron Condor 管理時機：何時提前平倉、何時調整",
+     "en": "Managing iron condors: when to close early, when to adjust",
+     "kind": "explainer",
+     "target": "提前平倉、調整、獲利了結、被測試側、剩餘天數、防守",
+     "dose": "看一次 339 秒，抄下提前平倉與調整的具體觸發條件（獲利比例、剩餘天數、被測試側），貼進自己的交易檢查清單",
+     "title": "Iron Condors: Options Strategy Management",
+     "channel": "tastylive",
+     "url": "https://www.youtube.com/watch?v=VunSjw7JpuM",
+     "duration": "5:39"
+    }
+   ]
+  },
+  {
+   "id": "ch7-u3",
+   "name": "該不該用價差:成本、滑價與管道限制",
+   "type": "practice",
+   "assessment": "打開券商 App 的選擇權鏈，挑你想做的價差兩腳，各抄下買價與賣價，然後做三件事：(1) 把兩腳的（賣價－買價）相加再乘 2，除以這組價差的最大獲利，得出來回成本侵蝕比，超過 15% 就換一條鏈或換履約價；(2) 用模擬帳戶把同一組價差先下組合單、再逐腳各下一次，記錄兩種方式的總成交價差，以及逐腳時是否出現只成交一腳的空窗；(3) 打電話問營業員「我的複委託帳戶能不能下美股選擇權多腳組合單」，把答案與替代管道寫進交易筆記。三項都能親手完成並說出具體數字，才算通過本單元。",
+   "tight": [
+    "價差單進場前的建議與注意事項（繁中主課直接對題）",
+    "買賣價差與流動性判讀（158k 觀看的選擇權專題）",
+    "逐腳下單的斷腳風險與組合單對比"
+   ],
+   "weak": [
+    "多腳來回滑價的量化：僅有以買賣價差成本切入的英文片，無「多腳策略來回成本」專題，繁中完全缺片",
+    "台灣複委託多腳單限制：查無專題影片，以繁中「複委託 vs 海外券商」比較片覆蓋替代做法半題，限制細節需課文補充"
+   ],
+   "lesson": {
+    "name": "該不該用價差:成本、滑價與管道限制",
+    "en": "Should You Trade Spreads: Costs, Slippage, and Access Constraints",
+    "kind": "explainer",
+    "target": "價差單、交易成本、進場檢查、注意事項",
+    "dose": "完整看一遍，把影片的 3 個建議與 3 個注意事項各抄成一行，對照自己下一筆想做的價差單逐條打勾",
+    "title": "2022選擇權『價差單教學』3個建議＋3注意事項",
+    "channel": "不預測漲跌",
+    "url": "https://www.youtube.com/watch?v=rQCGfzwLwMg",
+    "duration": "7:41",
+    "why": "繁中且直接以「建議＋注意事項」的框架回答本單元的核心問題「該不該用價差」，涵蓋成本與執行面的坑；461 秒在主課區間內。英文候選 Option Alpha《Single vs Multi Leg Options Strategies》(1245s, 130k views) 品質相當但依語言優先序取繁中。"
+   },
+   "drills": [
+    {
+     "name": "多腳策略的來回滑價與手續費:成本如何侵蝕價差獲利",
+     "en": "Round-trip slippage and commissions: how costs erode spread profits",
+     "kind": "explainer",
+     "target": "滑價、買賣價差成本、手續費、獲利侵蝕",
+     "dose": "看完後拿自己最近一筆（或模擬的）價差單，把兩腳的買賣價差相加、乘 2（來回），除以該價差的最大獲利，算出成本侵蝕比",
+     "title": "Picking The Wrong Stock Is Costing You $3,840 Per Year (Bid Ask Spread)",
+     "channel": "Option Alpha",
+     "url": "https://www.youtube.com/watch?v=e2CD8LzdZAI",
+     "duration": "9:33"
+    },
+    {
+     "name": "流動性與買賣價差:什麼樣的選擇權鏈不適合做價差",
+     "en": "Liquidity and bid-ask spreads: which option chains are unfit for spreads",
+     "kind": "explainer",
+     "target": "流動性、買賣價差、選擇權鏈篩選、成交量",
+     "dose": "看完後打開任一檔標的的選擇權鏈，依影片的價差寬度標準把 5 個履約價逐一標成「可交易／不可交易」",
+     "title": "The BID-ASK in Trading Options can Make or Break Ya | Adam Answers Episode 3 | InTheMoney",
+     "channel": "InTheMoney",
+     "url": "https://www.youtube.com/watch?v=ko7NeS4xHS8",
+     "duration": "8:18"
+    },
+    {
+     "name": "組合單與逐腳下單:多腳策略的下單方式與斷腳風險",
+     "en": "Combo orders vs legging in: order entry methods and leg risk",
+     "kind": "explainer",
+     "target": "組合單、逐腳下單、斷腳風險、下單方式",
+     "dose": "看完後用模擬帳戶把同一組價差各下一次：先組合單、再逐腳，記錄兩者的總成交價差與中途只成交一腳的狀況",
+     "title": "Options Trading Mistake #8: Legging into Spreads",
+     "channel": "Ally",
+     "url": "https://www.youtube.com/watch?v=ltymRp3mCKU",
+     "duration": "2:42"
+    },
+    {
+     "name": "台灣複委託下多腳單的限制與替代做法",
+     "en": "Taiwan sub-brokerage limits on multi-leg orders and alternatives",
+     "kind": "explainer",
+     "target": "複委託、海外券商、管道限制、替代做法",
+     "dose": "看完後打給自己券商的營業員問兩個問題：複委託能不能下美股選擇權？能不能下多腳組合單？把答案與替代管道寫進交易筆記",
+     "title": "投資美股必看！4點告訴你複委託、海外券商怎麼選！複委託沒有比較安全？海外券商更有保障？｜BOS巴菲特線上學院 Buffett Online School",
+     "channel": "投資好朋友 BOS價值投資",
+     "url": "https://www.youtube.com/watch?v=mA45DklHSxY",
+     "duration": "7:40"
+    }
+   ]
+  }
+ ]
 }

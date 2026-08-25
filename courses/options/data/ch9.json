@@ -1,5 +1,120 @@
 {
  "chapter": "CH9",
  "title": "兩位的共同框架與誠實界線",
- "units": []
+ "units": [
+  {
+   "id": "ch9-u1",
+   "name": "殊途同歸:保守賣方的四條紀律",
+   "type": "guide",
+   "assessment": "用模擬帳戶（或下一筆真實的賣方單）做「三數字檢核」：下單前先在紙上寫下 (1) 這筆部位的最大損失金額，寫不出具體上限，就代表你正在裸賣；(2) 成交後的總保證金使用率，對照你預設的水位帶（例如 50–80%）確認仍在帶內；(3) 預定的獲利平倉價，例如收回權利金的 50%，並實際掛出 GTC 平倉單（按鈕位置以你券商實際畫面為準）。一週後回看成交與委託紀錄：三個數字都是下單前寫好且照做的，紀律才算成立；任何一項是事後補寫的，就是紀律缺口，下一筆單重來一次檢核。",
+   "tight": [
+    "裸賣 call 不設風險上限，凹單留到結算",
+    "保證金用好用滿，波動一放大就被追繳或強制平倉",
+    "獲利部位想吃滿全部權利金，拖進到期前 gamma 風險最高的一段"
+   ],
+   "weak": [
+    "只賣有擔保或風險有上限的部位（covered call、cash-secured put、價差）",
+    "保證金水位留緩衝（例如 50–80% 帶），永遠不下滿倉",
+    "預設獲利平倉條件（例如收回權利金的 50%）並機械性執行，不憑感覺凹單"
+   ],
+   "lesson": {
+    "name": "殊途同歸：保守賣方的四條紀律",
+    "en": "Four Disciplines of the Conservative Option Seller",
+    "kind": "explainer",
+    "target": "賣方紀律、風險上限、部位規模、獲利了結、保守賣方框架",
+    "dose": "12 分鐘全程看完，把四條規則各寫成一句自己的話",
+    "title": "How to Sell Options Like a Wall Street Trader (My 4 Golden Rules)",
+    "channel": "TheOneLanceB",
+    "url": "https://www.youtube.com/watch?v=eWeGAYvjxh4",
+    "duration": "11:55",
+    "why": "「四條黃金規則」的賣方框架與本單元敘事同構，一位保守賣方把自己的做法收斂成四條可執行的紀律，正好對應 Gozilla 與 Led 殊途同歸的共同框架；美股脈絡、715 秒中段長度適合主課。繁中候選經三批查詢多為台指選擇權教學（課程明定排除）或標題含穩賺/零風險宣稱（內容紅線），故依品質取英文。"
+   },
+   "drills": [
+    {
+     "name": "不裸賣的理由：covered call 與裸賣 call 的風險差距",
+     "en": "Why Not Naked: Covered Call vs. Naked Call Risk",
+     "kind": "explainer",
+     "target": "covered call、裸賣 call、無限風險、保證金、風險上限",
+     "dose": "9 分鐘，邊看邊親手畫出兩張損益圖並標出最大損失",
+     "title": "✅  Options Trading - Naked Call vs. Covered Call (Beginner Friendly for 2021)",
+     "channel": "Fail Flop Fly",
+     "url": "https://www.youtube.com/watch?v=0Z9C5DR02XY",
+     "duration": "9:13"
+    },
+    {
+     "name": "部位水位與 sizing：為什麼保守賣方永遠不下滿倉",
+     "en": "Position Sizing: Why Conservative Sellers Never Max Out",
+     "kind": "explainer",
+     "target": "部位規模、資金控管、單筆風險比例、保證金水位、滿倉風險",
+     "dose": "4 分鐘，看完立刻用自己的帳戶金額算一次單筆上限",
+     "title": "Bill Poulos & Profits Run Present: Options Trading Risk Management Formula (How Much To Trade)",
+     "channel": "Profits Run",
+     "url": "https://www.youtube.com/watch?v=cPrr8QcoPl0",
+     "duration": "4:01"
+    },
+    {
+     "name": "小賺就平：提前平倉與管理獲利部位的機械規則",
+     "en": "Take Profits Early: Mechanical Rules for Managing Winners",
+     "kind": "explainer",
+     "target": "提前平倉、獲利了結、50% 法則、部位管理、short put",
+     "dose": "7 分鐘，記下影片中獲利平倉的觸發條件並寫成自己的規則",
+     "title": "Short Naked Put: Options Management Strategy",
+     "channel": "tastylive",
+     "url": "https://www.youtube.com/watch?v=CF9DhvzVkbI",
+     "duration": "7:12"
+    }
+   ]
+  },
+  {
+   "id": "ch9-u2",
+   "name": "誠實界線:你該自己驗的事",
+   "type": "guide",
+   "assessment": "下次看到任何獲利截圖,實際跑這個三步檢核:(1) 檢查它是不是券商對帳單,app 損益頁截圖人人可修圖,對帳單要有帳號末碼、日期與逐筆成交紀錄,只給截圖不給對帳單的一律不採信;(2) 挑該老師 3 個月前的公開喊單 5 筆,用當時的歷史收盤價自己重算報酬率,對不上他的自述績效就列入黑名單;(3) 想跟單前先開模擬帳戶照他的方法做 20 筆並記錄每筆進出價,再用不超過總資金 1% 的小倉位實做 10 筆,比較兩組的滑價與勝率差,差距明顯就代表模擬結果不可外推,回到第 2 步重驗,不加碼.",
+   "tight": [
+    "paper trading 用法與限制:繁中直配(日日賺 457s,主題完全對應)",
+    "自述績效/投顧話術拆解:繁中直配(韭菜們的救贖 331s)",
+    "英文圈揭穿假大師的講解供給充足(單一查詢即 12 筆合格,主課從中選出 175 萬觀看的框架型講解)"
+   ],
+   "weak": [
+    "中文「倖存者偏差」內容:三個查詢(倖存者偏差 投資、倖存者偏差 股票、幸存者偏差 投资)各回傳 20 筆但合格 0 筆(長度或觀看數不過門檻);英文有合格替代(Eddie Woo 370s/751萬、Quantified Strategies 217s/9326)但未入選——本單元的倖存者偏差只能靠主課與動作一間接帶到",
+    "主課無同等品質繁中替代:蕾咪(525s)偏廣告防詐、元大投顧(1009s)偏投資心理學、走圖小天后(1278s)偏散戶心理,均未正面處理「驗證績效宣稱」,故主課採英文,繁中學員需依賴字幕"
+   ],
+   "lesson": {
+    "name": "你該自己驗的事:識破假績效的完整框架",
+    "en": "How to Spot a Fraudulent Trading Guru",
+    "kind": "explainer",
+    "target": "績效驗證、假老師識別、獲利截圖、對帳單、紅旗清單",
+    "dose": "17 分鐘完整看一次,邊看邊抄下影片列出的每一個紅旗,看完拿去對照你目前追蹤的任一位老師",
+    "title": "The 1 Video to Expose EVERY Trading Guru & how to spot a fraud",
+    "channel": "ImanTrading",
+    "url": "https://www.youtube.com/watch?v=jy4k_GVLEko",
+    "duration": "17:24",
+    "why": "正面教「如何識破績效宣稱造假」的完整框架,涵蓋截圖造假、生活方式包裝、對帳單驗證,與單元主旨一對一;繁中候選(蕾咪 525s 偏廣告防詐、元大投顧 1009s 偏投資心理學)均未正面處理績效驗證,品質不同等故採英文"
+   },
+   "drills": [
+    {
+     "name": "獲利截圖不是證據:自述績效、倖存者偏差與散戶常見失敗",
+     "en": "Profit screenshots are not evidence: self-reported performance and survivorship bias",
+     "kind": "explainer",
+     "target": "自述績效、投顧話術、獲利截圖、倖存者偏差、散戶失敗",
+     "dose": "5.5 分鐘看一次,看完回想你最近一次差點被說服的獲利截圖,逐條套影片裡的話術拆解",
+     "title": "【5分鐘破解投顧話術！】老師真的那麼神?",
+     "channel": "韭菜們的救贖",
+     "url": "https://www.youtube.com/watch?v=ME-Xq4fa3Mw",
+     "duration": "5:31"
+    },
+    {
+     "name": "模擬單與小倉位驗證:paper trading 的正確用法與限制",
+     "en": "Paper trading: proper use and limits",
+     "kind": "explainer",
+     "target": "模擬交易、paper trading、小倉位驗證、滑價、實盤差異",
+     "dose": "7.6 分鐘看一次,開模擬帳戶前看一遍、要轉小倉位實單前再看一遍,對照影片列的模擬與實盤差異逐項自查",
+     "title": "模擬交易 vs 現實交易｜ Paper Trading vs Real Trading",
+     "channel": "日日賺 Day Day Earn",
+     "url": "https://www.youtube.com/watch?v=92VyiUa8ohM",
+     "duration": "7:37"
+    }
+   ]
+  }
+ ]
 }

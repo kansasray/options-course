@@ -1,5 +1,120 @@
 {
  "chapter": "CH4",
  "title": "到期、履約與指派",
- "units": []
+ "units": [
+  {
+   "id": "ch4-u1",
+   "name": "到期那天發生什麼:ITM/OTM 與自動履約",
+   "type": "concept",
+   "assessment": "開一個券商模擬帳戶（或看盤軟體的期權鏈），挑一檔本週五到期的美股，寫下三張假想部位：價內一檔的 long call、價外一檔的 long put、貼近現價的 short call。到期前先在紙上預測每張的結局（自動履約買進股票／歸零／可能被指派），下週一開盤對照帳戶持倉與現金變化，三張全對才算過關。做一題口頭自測：收盤價比履約價高 0.005 美元的 call 會不會被自動履約？答案必須講出 OCC 的 0.01 美元門檻，以及持有人可提交放棄履約（DNE）指示這個例外；再補一句 short 部位為什麼在收盤價貼著履約價時（pin risk）到當晚都不知道會不會被指派。三段都答得出來，本單元即通過。",
+   "tight": [
+    "ITM/OTM 到期結局：候選充足，主課（Option Alpha）與動作 1（Matthew Manuel）互為總分結構",
+    "Pin risk 與到期前平倉：Jake Broe 一支片同時覆蓋動作 3 的兩個關鍵詞，另有 Scott Reese（BfJ476APKjA, 566s, 8483 views）可當備援",
+    "指派機制：主課 1066 秒內含 assignment 段落，與 CH4 後續單元銜接"
+   ],
+   "weak": [
+    "OCC 0.01 門檻與 DNE：英文圈沒有專講此題的短片，僅簡中一支合格；DNE 提交流程（向券商下放棄履約指示）在所有命中片中都只是帶過，未有獨立示範",
+    "繁中資源整體缺位：繁中候選集中在台指選擇權（現金結算、週三結算），與美股個股期權的實物交割/自動履約機制不同，本單元全部選片無繁中"
+   ],
+   "lesson": {
+    "name": "選擇權到期與指派全流程",
+    "en": "Options Expiration & Assignment - Options Mechanics - Options Trading For Beginners",
+    "kind": "explainer",
+    "target": "到期結局、ITM 履約、OTM 歸零、指派機制、自動履約",
+    "dose": "全程看完，遇到 ITM/OTM 判定的段落先暫停自己判斷再對答案",
+    "title": "Options Expiration & Assignment - Options Mechanics - Options Trading For Beginners",
+    "channel": "Option Alpha",
+    "url": "https://www.youtube.com/watch?v=OnUsu1y1W9w",
+    "duration": "17:46",
+    "why": "唯一一支把本單元三個主題（ITM/OTM 到期結局、自動履約、指派）放進同一條敘事線的高觀看講解片；tastylive 的 Options Expiration Explained（804s）也合格但覆蓋較窄。繁中候選（tradeoptions4living、選擇權搖錢樹等）都以台指選擇權現金結算為框架，不含 OCC 自動履約機制，與本單元美股個股期權的射程不同，故品質不對等、取英文片。"
+   },
+   "drills": [
+    {
+     "name": "到期時選擇權的結局:ITM 履約、OTM 歸零",
+     "en": "What Happens to Options at Expiration",
+     "kind": "explainer",
+     "target": "ITM 履約、OTM 歸零、到期結局、權利金消滅",
+     "dose": "看 1 次，邊看邊在紙上畫出 ITM/OTM 兩條分支的結局",
+     "title": "What Happens When an Option Contract Expires",
+     "channel": "Matthew Manuel",
+     "url": "https://www.youtube.com/watch?v=38FVF0XrByU",
+     "duration": "4:41"
+    },
+    {
+     "name": "OCC 0.01 自動履約門檻與放棄履約",
+     "en": "Automatic Exercise & Do-Not-Exercise",
+     "kind": "explainer",
+     "target": "OCC 自動履約、0.01 門檻、放棄履約、到期日風險",
+     "dose": "看 1 次，看完覆述 OCC 自動履約的觸發條件與例外",
+     "title": "期权的执行以及到期日自动执行的风险和策略(Option Exercise, Auto exercise on expiration day, OCC)",
+     "channel": "股金贫道 Gu Jin Pin Dao",
+     "url": "https://www.youtube.com/watch?v=9YJ7ExFOsk8",
+     "duration": "9:18"
+    },
+    {
+     "name": "Pin Risk 與賣方取捨:到期前平倉 vs 放到期",
+     "en": "Pin Risk / Closing vs Holding to Expiration",
+     "kind": "explainer",
+     "target": "Pin Risk、到期前平倉、賣方風險、指派不確定性",
+     "dose": "看 1 次，看完用一句話說出「為什麼賣方常在到期前平倉」",
+     "title": "Pin Risk Explained - Always Close When Trading Options!!",
+     "channel": "Jake Broe",
+     "url": "https://www.youtube.com/watch?v=M6UdyEezdWE",
+     "duration": "9:19"
+    }
+   ]
+  },
+  {
+   "id": "ch4-u2",
+   "name": "提前指派與除息",
+   "type": "concept",
+   "assessment": "打開券商 app，找一檔下週除息的美股（如高股息 ETF 或大型股），列出到期日在除息日之後的 Deep ITM Call：逐一抄下每檔合約的權利金、內在價值，算出外在價值（權利金 − 內在價值），再對照公司宣布的每股股息。把「外在價值 < 股息」的合約標記為預測會被提前指派，除息日當天回頭查這些履約價的未平倉量（open interest）有沒有驟減，驗證自己的預測命中率。另一項口試自檢：不看筆記，說出（1）自己持有的 short call 被提前指派後帳上會出現什麼部位、（2）為什麼非除息情境下對方提前履約通常對你有利、（3）除息前一天要用什麼判準決定平倉或滾倉。三題都能在 30 秒內講清楚才算過。",
+   "tight": [
+    "提前指派的核心判準（外在價值趨近零才會被指派）在主課與兩支動作片中互相印證，邏輯閉環完整",
+    "除息前 short call 的股息風險判準（股息 > 剩餘外在價值即高危）有 tastylive 專片逐步示範",
+    "「為何少見」的理論面（提前履約放棄時間價值）有獨立短片完整推導"
+   ],
+   "weak": [
+    "繁中完全查無同主題達標片（四組中文查詢多回泛入門、窩輪、台股新聞），本單元全為英文片",
+    "被指派後的實際處理只在片中帶到，缺一支完整的真實帳戶 replay（候選 Brad Finn iWbGOzrS454 可作補充，因每格僅一片未選入）",
+    "Put 的提前指派（深度價內 put 的利率誘因）三支片皆少著墨"
+   ],
+   "lesson": {
+    "name": "提前指派風險：何時該擔心、何時不必",
+    "en": "Early Options Assignment Risk (When to Worry & When to Chill)",
+    "kind": "explainer",
+    "target": "提前指派、指派風險、外在價值、深度價內、除息日",
+    "dose": "全程看完一次（約 15 分鐘），第二遍只重看「何時真的該擔心」段落，抄下三個判準：深度價內、外在價值趨近零、除息日前夕",
+    "title": "Early Options Assignment Risk (When to Worry & When to Chill)",
+    "channel": "projectoption",
+    "url": "https://www.youtube.com/watch?v=7pTb1a5IgKM",
+    "duration": "15:20",
+    "why": "同時覆蓋本單元兩個子題（提前指派為何少見 + 何時風險升高），以外在價值為主軸講清判準，76k 觀看、長度適中。繁中查無同主題達標片；簡中僅 PowerUpGammas 泛談指派風險（473s、5.2k 觀看），深度不及此片，依「同等品質才取中文」原則不採用"
+   },
+   "drills": [
+    {
+     "name": "為何美式選擇權很少被提前履約",
+     "en": "Early Assignment / Why Options Are Rarely Exercised",
+     "kind": "explainer",
+     "target": "提前履約、外在價值、時間價值、美式選擇權、賣出平倉",
+     "dose": "看一次（約 8 分鐘），邊看邊用自己的話寫下「提前履約 = 白白放棄外在價值」的完整推理，再列出唯一的例外情境（除息）",
+     "title": "Do Not Exercise Options Early - Here is Why",
+     "channel": "Jake Broe",
+     "url": "https://www.youtube.com/watch?v=m4q1Wz2TYF4",
+     "duration": "8:02"
+    },
+    {
+     "name": "除息前的股息風險與被指派",
+     "en": "Dividend Risk & Early Assignment",
+     "kind": "explainer",
+     "target": "股息風險、除息日、深度價內買權、外在價值、被指派處理",
+     "dose": "看一次（約 10 分鐘），跟著影片把「剩餘外在價值 vs 股息金額」的比較親手做一遍，並記下被指派後帳上會出現的部位與處理選項",
+     "title": "What Is Dividend Risk? | Options Trading Concepts",
+     "channel": "tastylive",
+     "url": "https://www.youtube.com/watch?v=hTWTW4S8u-M",
+     "duration": "9:56"
+    }
+   ]
+  }
+ ]
 }

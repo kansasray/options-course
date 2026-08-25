@@ -1,5 +1,209 @@
 {
  "chapter": "CH2",
  "title": "權利金:時間價值與 IV",
- "units": []
+ "units": [
+  {
+   "id": "ch2-u1",
+   "name": "權利金=內在價值+時間價值",
+   "type": "concept",
+   "assessment": "打開券商軟體或看盤 app 抓一組當下的真實選擇權報價（例如台指選擇權 T 字報價表），做三步：(1) 挑一檔價內買權，用「標的現價−履約價」算出內在價值，再用「權利金−內在價值」算出時間價值，兩者相加必須等於報價，算不平就是拆錯；(2) 挑一檔價外買權重算一次，內在價值應恰為 0、權利金全部是時間價值；(3) 把價內一檔、價平、價外一檔三個履約價的時間價值抄下來排成一列，價平那檔的時間價值應該最大。三步都對，代表你已能從任何報價拆出兩種價值；第 (3) 步排不出「價平最大」通常是把內在價值誤算進時間價值。",
+   "tight": [
+    "內在價值/時間價值的概念講解：中英文合格候選皆充足（繁中 2 支、簡中 6 支、英文 10 支）",
+    "ITM/ATM/OTM 分類講解：簡中有 5 分鐘專講片（46k views），覆蓋完整",
+    "權利金組成主課：繁中有正中主題的專講片（選擇權搖錢樹 948s）"
+   ],
+   "weak": [
+    "深度價外「便宜是錯覺」主題繁中片缺乏：4 個繁中/英文查詢的命中皆離題（LEAPS、0DTE、裸賣），僅簡中 PowerUpGammas 一支正題合格",
+    "報價實例計算的繁中片長不合：最貼題的 WF8e3Wr2eY0（634s）超出動作片 600 秒上限，被迫改用簡中",
+    "動作1 採用的 JK爸爸片標題含行銷語（「速賺40萬」），內容前 4 分鐘是正經術語拆解，但觀感上不是最乾淨的候選"
+   ],
+   "lesson": {
+    "name": "權利金=內在價值+時間價值",
+    "en": "Option premium = intrinsic value + time value",
+    "kind": "explainer",
+    "target": "權利金、內在價值、時間價值、價值組成",
+    "dose": "完整看 1 遍，看完能不看筆記寫出「權利金＝內在價值＋時間價值」並各舉一個例子",
+    "title": "【選擇權入門】選擇權權利金組成",
+    "channel": "選擇權搖錢樹",
+    "url": "https://www.youtube.com/watch?v=AAxY8-nDMTw",
+    "duration": "15:48",
+    "why": "繁中、整支專講權利金的組成拆解（正是本單元命題），948 秒的篇幅足以把兩塊價值講透而不冗長；台灣選擇權專門頻道，觀看 1.6 萬。繁中候選中唯一以「權利金組成」為主軸的講解片。"
+   },
+   "drills": [
+    {
+     "name": "選擇權權利金的組成:內在價值與時間價值怎麼拆",
+     "en": "Splitting an option premium into intrinsic and time value",
+     "kind": "explainer",
+     "target": "權利金拆解、內在價值、時間價值、波幅值",
+     "dose": "看 1 遍，跟著影片把權利金拆成的每一塊各用一句話寫下定義",
+     "title": "【期權新手教學 EP 2】 4分鐘快速解構期權3大術語：時間值、價內值、波幅值｜絕密揭秘一日速賺40萬利潤的期權策略｜獨立股評人 JK爸爸陳立展｜#期權 #投資 #投資教學",
+     "channel": "JK爸爸的投資頻道",
+     "url": "https://www.youtube.com/watch?v=nv-zw58STnI",
+     "duration": "4:33"
+    },
+    {
+     "name": "價內/價平/價外(ITM/ATM/OTM)的價值組成差異",
+     "en": "Value composition across ITM, ATM and OTM options",
+     "kind": "explainer",
+     "target": "價內、價平、價外、ITM、ATM、OTM、價值組成",
+     "dose": "看 1 遍，看完畫一張三欄表：ITM/ATM/OTM 各自的內在價值與時間價值有無",
+     "title": "什么是实值期权 ITM，平值期权 ATM，虚值期权 OTM！5分钟理解！秒懂期权系列（5）",
+     "channel": "异界番茄说",
+     "url": "https://www.youtube.com/watch?v=GxivpCafb1g",
+     "duration": "6:38"
+    },
+    {
+     "name": "深度價外選擇權為什麼「便宜」是錯覺",
+     "en": "Why deep OTM options being cheap is an illusion",
+     "kind": "explainer",
+     "target": "深度價外、深度虛值、時間價值、買方風險、便宜錯覺",
+     "dose": "看 1 遍，看完用自己的話說出深度價外權利金裡內在價值是多少、便宜的代價是什麼",
+     "title": "期权新手误区系列 - 热衷使用深度虚值期权 Obssessed in Trading Deep OTM Options (Option Noob Mistake Series)",
+     "channel": "PowerUpGammas",
+     "url": "https://www.youtube.com/watch?v=e1lfLNr_CMI",
+     "duration": "6:11"
+    },
+    {
+     "name": "實例拆解:從實際報價算出內在價值與時間價值佔比",
+     "en": "Worked example: computing intrinsic and time value from real quotes",
+     "kind": "walkthrough",
+     "target": "實際報價、內在價值計算、時間價值佔比、權利金拆解",
+     "dose": "跟著影片的例子在紙上算 1 次，再自己找一組真實報價重算 1 次",
+     "title": "期权价格怎么算？期权基础知识时间价值和内在价值",
+     "channel": "老鲁随笔—美股期權交易",
+     "url": "https://www.youtube.com/watch?v=-mzxL5dk3TY",
+     "duration": "8:46"
+    }
+   ]
+  },
+  {
+   "id": "ch2-u2",
+   "name": "時間衰減與到期日選擇",
+   "type": "concept",
+   "assessment": "打開券商的選擇權報價表，挑同一履約價、三個不同到期日（約 7 天、30 天、90 天）的合約，各抄下權利金並減去內在價值得到時間價值；連續三個交易日同一時間各抄一次，算出每支每天掉幾點。檢核標準一：7 天期每天掉的「比例」明顯大於 90 天期，即親手驗證了衰減在近月加速。檢核標準二：合上筆記口頭回答兩題——買方為何選長天期（單日被吃掉的比例低、有時間等行情）、賣方為何選短天期（站在曲線加速段、單位時間收的衰減最多），各說出一句結構性理由；說不出來就回看第三支影片再試一次。",
+   "tight": [],
+   "weak": [],
+   "lesson": {
+    "name": "時間衰減與到期日選擇",
+    "en": "Time Decay and Choosing Expirations",
+    "kind": "explainer",
+    "target": "Theta、時間價值、權利金衰減、希臘字母",
+    "dose": "全片 16 分鐘看一次；Theta 衰減曲線圖出現時暫停，先自己猜最後一週斜率會變陡還是變緩，再繼續看驗證",
+    "title": "美股期权 · 期权希腊字母 探究Theta的时间损耗 | Ultimate Guide to Option Greeks: Visualizing Theta",
+    "channel": "PowerUpGammas",
+    "url": "https://www.youtube.com/watch?v=WJrut00Owmw",
+    "duration": "16:23",
+    "why": "中文圈唯一查到的 Theta 專講視覺化長課：每天損耗多少、衰減曲線形狀、買賣雙方各自的視角一支講完。繁中候選（OP 時間價值介紹 634s、不預測漲跌雙買課 986s）都把時間價值當策略配菜，主題貼合度不及此支，故取簡中。"
+   },
+   "drills": [
+    {
+     "name": "Theta 是什麼：時間衰減如何每天吃掉權利金",
+     "en": "What is Theta: how time decay eats premium daily",
+     "kind": "explainer",
+     "target": "Theta、時間衰減、權利金",
+     "dose": "看完 4.5 分鐘後，用自己的話寫一句定義：「Theta = 其他條件不變時，權利金每天掉多少」，寫不出來重看一次",
+     "title": "Understanding Theta - Time Decay Of Options",
+     "channel": "Option Alpha",
+     "url": "https://www.youtube.com/watch?v=4X3HBFntkds",
+     "duration": "4:30"
+    },
+    {
+     "name": "時間衰減不是線性的：最後 30 天為何加速",
+     "en": "Time decay is not linear: why it accelerates in the final 30 days",
+     "kind": "explainer",
+     "target": "衰減曲線、非線性、到期加速、30天",
+     "dose": "鎖定影片中的時間價值衰減曲線段：看完自己畫一條 90 天到 0 天的時間價值曲線，標出約 30 天處的加速起點，再回放對照",
+     "title": "9. Theta",
+     "channel": "Zerodha Varsity",
+     "url": "https://www.youtube.com/watch?v=fDLJlU8OdP8",
+     "duration": "7:39"
+    },
+    {
+     "name": "到期日怎麼選：買方選長天期、賣方選短天期的結構性理由",
+     "en": "Choosing expirations: why buyers go long-dated and sellers go short-dated",
+     "kind": "walkthrough",
+     "target": "到期日、DTE、買方、賣方",
+     "dose": "看完後開自己券商的選擇權報價表實作一次：替假想買方挑一個 60 天以上的合約、替假想賣方挑一個 30 天內的合約，各寫一句挑選理由",
+     "title": "如何选择期权的时间(expiration date)和价格(strike price) | 美股期权入门教程",
+     "channel": "美股先锋",
+     "url": "https://www.youtube.com/watch?v=8ubX9bRsVKY",
+     "duration": "6:50"
+    }
+   ]
+  },
+  {
+   "id": "ch2-u3",
+   "name": "隱含波動率與 IV crush",
+   "type": "concept",
+   "assessment": "打開券商 App 或 Barchart，挑一檔本週將公布財報的美股：財報前一天抄下 (1) 該股 IV 與 IV Rank、(2) 最近到期 ATM call 權利金、(3) 用 ATM straddle 總價（或 股價×IV×√(天數/365)）算出 expected move 並寫下預測區間。財報後首個開盤再抄同一合約一次，逐項檢核：IV 是否大幅回落（IV crush 發生了沒）；若股價漲但漲幅小於 expected move，call 權利金是否照樣縮水。能指著自己抄的兩組數字解釋「方向對了為什麼還賠」，並說出事前 IV Rank 高低與這次結果的關係，這個單元才算過關。",
+   "tight": [
+    "主課一支片同時覆蓋 IV 概念與財報 IV crush 雙殺機制，與單元名完全對題（75k views）",
+    "四個動作各有專講片，且 expected move 用 walkthrough 可實際跟算",
+    "IV crush 動作片標題即是本單元的痛點句（Why Your Calls Lose Money When the Stock Goes Up，209k views）"
+   ],
+   "weak": [
+    "IV crush、IVR/IVP、expected move 三個動作查無合格中文短片（5 組中文查詢 0 筆符合或僅回長片），只能用英文",
+    "主課為簡中（Money Manta），繁中候選皆只覆蓋單元一半（VIX 指數或權證視角）",
+    "全部選片皆為美股期權語境，無台指選擇權在地案例；繁中 IV 概念片（阿海）為粵語配音，台灣讀者需靠字幕"
+   ],
+   "lesson": {
+    "name": "隱含波動率與 IV crush 總覽",
+    "en": "Implied Volatility and IV Crush",
+    "kind": "explainer",
+    "target": "隱含波動率、IV crush、財報事件、權利金、選擇權買方風險",
+    "dose": "完整看一遍；第二遍在講「財報後多空雙殺」的段落暫停，自己用一句話重述 IV 回落如何同時打擊 call 與 put 買方，說不出來就重看該段",
+    "title": "为何财报过后期权会被多空双杀？隐含波动率是什么？如何通过卖出naked put赚钱？",
+    "channel": "Money Manta的投资频道",
+    "url": "https://www.youtube.com/watch?v=mg8w8z-okis",
+    "duration": "15:07",
+    "why": "一支片同時覆蓋本單元兩大主軸：IV 是什麼＋財報後 IV 崩落造成買方雙殺的機制，並示範賣方視角，與單元名完全對題。簡中；繁中候選（不預測漲跌兩支偏 VIX 指數、理周偏權證）都只碰到單元的一半，依「同等品質下繁中優先」判斷此片品質與對題度明顯較高故採簡中。長度 907s 在主課 240–1440s 區間內。"
+   },
+   "drills": [
+    {
+     "name": "隱含波動率是什麼:市場對未來波動的定價",
+     "en": "What Implied Volatility Is: the Market's Price on Future Volatility",
+     "kind": "explainer",
+     "target": "隱含波動率、引伸波幅、市場預期、權利金定價",
+     "dose": "看一遍；看完用自己的話寫下「IV 高＝權利金貴」的因果鏈（市場預期波動大→保險費貴），寫不出來回看前半段",
+     "title": "何謂引伸波幅/隱含波幅(Implied Volatility)? 想玩期權玩得好 必學",
+     "channel": "無業的阿海",
+     "url": "https://www.youtube.com/watch?v=uhs0mOWa75k",
+     "duration": "8:38"
+    },
+    {
+     "name": "IV crush:財報前買 call 為何猜對方向還賠錢",
+     "en": "IV Crush: Why Calls Bought Before Earnings Lose Even When Direction Is Right",
+     "kind": "explainer",
+     "target": "IV crush、財報、買 call 虧損、Vega、權利金縮水",
+     "dose": "看一遍；片中列的三個避開 IV crush 做法各抄一行，並標出哪一個最適用於財報前的情境",
+     "title": "3 Ways to Avoid IV Crush | Why Your Calls Lose Money When the Stock Goes Up",
+     "channel": "InTheMoney",
+     "url": "https://www.youtube.com/watch?v=v846B7hs9xg",
+     "duration": "9:43"
+    },
+    {
+     "name": "IV Rank 與 IV Percentile:判斷 IV 高低的實用讀法",
+     "en": "IV Rank vs IV Percentile: a Practical Read on Whether IV Is High",
+     "kind": "explainer",
+     "target": "IV Rank、IV Percentile、波動率相對高低、篩選指標",
+     "dose": "看一遍；看完分別寫下 IVR 與 IVP 的一行定義與各自的失真情境（例：單一暴衝把 IVR 壓扁），寫不出失真情境就重看",
+     "title": "IV Rank (IVR) vs IV Percentile (IVP) | Thinkorswim (tos) is WRONG",
+     "channel": "Outlier Trading",
+     "url": "https://www.youtube.com/watch?v=yRUDAtVL74w",
+     "duration": "3:40"
+    },
+    {
+     "name": "從 IV 到期望波動(expected move):權利金裡的機率定價",
+     "en": "From IV to Expected Move: the Probability Pricing Inside Premiums",
+     "kind": "walkthrough",
+     "target": "expected move、期望波動、標準差、ATM straddle、機率定價",
+     "dose": "邊看邊跟算：照片中方法用一檔你熟的股票實際算一次 expected move，再到選擇權報價頁對照 ATM straddle 價驗證自己的數字",
+     "title": "How To Calculate The Expected Move Of A Stock",
+     "channel": "Option Alpha",
+     "url": "https://www.youtube.com/watch?v=vrxcifb83UM",
+     "duration": "8:44"
+    }
+   ]
+  }
+ ]
 }

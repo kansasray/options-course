@@ -1,5 +1,207 @@
 {
  "chapter": "CH8",
  "title": "下單、倉位與風險",
- "units": []
+ "units": [
+  {
+   "id": "ch8-u1",
+   "name": "下單實務:報價、滑價與掛單",
+   "type": "practice",
+   "assessment": "開你的券商 App 找一檔近月價平買權：先抄下 bid 與 ask，心算中間價與 spread 佔權利金的百分比（超過 5% 即偏寬，該考慮換合約）。接著掛一張不會成交的限價買單（價格壓在 bid 之下幾檔），確認自己會改單、刪單；然後把價格一檔一檔往中間價調，記錄第幾次調價成交或最接近成交，全程不碰市價單。最後查同一標的兩個不同履約價的成交量與未平倉量，能明確說出哪一檔流動性較好、依據是哪兩個數字，才算過關。",
+   "tight": [
+    "讀懂 bid/ask 報價並計算 spread 佔權利金的比例",
+    "限價單掛單與從中間價逐步調價的成交流程",
+    "用成交量與未平倉量比較合約流動性"
+   ],
+   "weak": [
+    "台股選擇權（TXO）本土下單介面實操——主課與 drill 3 以美股期權平台為例",
+    "組合單（價差單）的掛單與 IOC/FOK 委託條件實務（搜尋中有 OP投資理財學院候選，本單元未納入）",
+    "滑價的量化估算——各片皆為概念帶過，沒有數據化示範"
+   ],
+   "lesson": {
+    "name": "限價單成交實戰：掛得到、又不買貴",
+    "en": "Get Your Limit Order Filled Every Time (and for Cheap)",
+    "kind": "explainer",
+    "target": "限價單、中間價、買賣價差、成交機率、調價",
+    "dose": "全片看一遍；第二遍開著自己券商的選擇權下單頁，把影片裡 bid、ask、mid、調價的每一步對照到自己的介面欄位",
+    "title": "Get Your Limit Order Filled EVERY Time (and for Cheap!) | Adam Answers Episode 4",
+    "channel": "InTheMoney",
+    "url": "https://www.youtube.com/watch?v=DCsozAkog_s",
+    "duration": "13:41",
+    "why": "直接命中本單元核心「報價與掛單」：從 bid/ask 讀報價、為什麼不用市價單、如何從中間價出發逐步調價換成交，一支片串起整個下單流程。繁中候選（Jo來聊美股 240 秒、群益實單教學 374 秒）不是太短就是偏券商介面操作，深度不及此片，依「同等品質才優先中文」原則取英文。"
+   },
+   "drills": [
+    {
+     "name": "Bid-Ask Spread：選擇權的隱形交易成本",
+     "en": "Bid-Ask Spread: The Hidden Cost of Options Trading",
+     "kind": "explainer",
+     "target": "買賣價差、隱形成本、報價、權利金",
+     "dose": "看一遍後，開報價畫面找兩檔 spread 寬窄明顯不同的合約，各算一次 spread 佔權利金的百分比",
+     "title": "The BID-ASK in Trading Options can Make or Break Ya | Adam Answers Episode 3 | InTheMoney",
+     "channel": "InTheMoney",
+     "url": "https://www.youtube.com/watch?v=ko7NeS4xHS8",
+     "duration": "8:18"
+    },
+    {
+     "name": "為什麼選擇權一律用限價單（市價單的滑價陷阱）",
+     "en": "Why Options Traders Always Use Limit Orders (Market Order Slippage Trap)",
+     "kind": "walkthrough",
+     "target": "限價單、市價單、滑價、出價、要價、下單介面",
+     "dose": "跟著影片認一遍下單介面的期權價格/出價/要價三個欄位，然後在自己的券商介面指出同樣三個位置",
+     "title": "【CC字幕】下單介面「期權價格/出價/要價」差別在哪? 掛「限價單」不買貴！ 【期權新手】【Jo來聊美股】",
+     "channel": "工程師Joseph - 理財揪舒服",
+     "url": "https://www.youtube.com/watch?v=3mnG-ht0N64",
+     "duration": "4:00"
+    },
+    {
+     "name": "Mid-Price 掛單法：從中間價開始出價的成交技巧",
+     "en": "Working the Mid: Start at Mid-Price to Get Filled",
+     "kind": "explainer",
+     "target": "中間價、掛單、調價、成交、fair price",
+     "dose": "看完後用模擬單練一次：掛在中間價、等 30 秒、往不利方向調一檔，最多調三次，記錄第幾次成交",
+     "title": "Getting Options Filled | Options Trading Concepts",
+     "channel": "tastylive",
+     "url": "https://www.youtube.com/watch?v=Xtm8lUeG1eQ",
+     "duration": "9:12"
+    },
+    {
+     "name": "流動性怎麼看：未平倉量、成交量與 Spread 寬度",
+     "en": "Reading Liquidity: Open Interest, Volume, and Spread Width",
+     "kind": "explainer",
+     "target": "未平倉量、成交量、流動性、Spread 寬度、T 字報價",
+     "dose": "看完後開一檔標的的選擇權 T 字報價，比較兩個履約價的成交量與未平倉量，判斷哪檔流動性較好",
+     "title": "期权量价关系如何解读？成交量与未平仓量怎么看？Volume and Open Interest? 秒懂期权系列（4）（字幕点击cc）",
+     "channel": "异界番茄说",
+     "url": "https://www.youtube.com/watch?v=OshRdPpJ9qc",
+     "duration": "9:44"
+    }
+   ]
+  },
+  {
+   "id": "ch8-u2",
+   "name": "倉位與風險管理",
+   "type": "practice",
+   "assessment": "打開券商下單頁或模擬帳戶，挑一口你想賣的 put，抄下三個數字：收到的權利金、履約價×契約乘數的名目接股金額、券商顯示的原始保證金。接著算兩個比率並寫在紙上：(a) 名目接股金額÷總資產，(b) 假設標的跳空下跌 10%（或直接套 0206 當天的波動幅度）時的估計虧損÷總資產。檢核標準：(b) 超過 2% 就把口數往下調，重算到低於 2% 為止；若三個數字有任何一格抄不出來、或兩個比率有任何一個算不出來，代表這單元沒過關，回去重看主課與動作 1、3 再做一次。",
+   "tight": [
+    "單筆風險上限（2% 法則）：主課與動作 1 雙重覆蓋，中文候選充足",
+    "賣方接股承諾：港台兩地都有合格中文短片（富翁電視MTTV、AASTOCKS、不預測漲跌可互換）",
+    "權利金小＝沒風險：0206 事件有多支合格影片，且有分析型（勳仔）與新聞型（TVBS、東森）兩種深度可選"
+   ],
+   "weak": [
+    "選擇權專用的倉位換算（口數 sizing）查無 30–600s 合格中文片，動作 3 只能用英文（Profits Run）",
+    "主課與動作 1 皆為港式粵語（繁中字幕），台灣國語的同主題長片只有偏加減碼技巧的市場解剖學 1152s，對齊度較低",
+    "「賣出 賣權 被指派」這組台式關鍵字在 YouTube 上完全撈不到教學內容，只回新聞雜訊——課程網站的分面索引建議改用 sell put／接股 這組詞"
+   ],
+   "lesson": {
+    "name": "倉位與風險管理",
+    "en": "Position Sizing and Risk Management",
+    "kind": "explainer",
+    "target": "風險控管、2% 法則、停損、風險報酬比、資金管理",
+    "dose": "全片一次看完；之後每次要開新倉前，重看 2% 法則與止蝕段落各一次，直到能不看影片說出自己的單筆風險上限",
+    "title": "不懂止蝕，贏都變輸！什麼是2%法則？風險管理入門班 【施傅教學】#止損 #風險回報比 #投資新手 #2% Rule",
+    "channel": "我要做富翁",
+    "url": "https://www.youtube.com/watch?v=_NS7cWO16SI",
+    "duration": "14:05",
+    "why": "用止蝕＋2%法則＋風險回報比把「單筆最多虧總資產幾%」講成一套可執行的系統，正好是本單元四個動作的總綱；繁中候選中它與動作序列對齊度最高（同題材的 Humbled Trader 1013s 為英文，依語言優先序讓位）"
+   },
+   "drills": [
+    {
+     "name": "單筆風險上限:這口最壞情境占總資產幾 %",
+     "en": "Per-trade risk cap as a percentage of total assets",
+     "kind": "explainer",
+     "target": "單筆風險上限、2% 法則、最壞情境、資金比例",
+     "dose": "看 1 次；然後拿自己最近 3 筆（實單或模擬）各算一次「最壞情境虧損÷總資產」，超過 2% 的記下差多少",
+     "title": "[投資教學]你的第一個風險管理課_2%Rule_課堂五十",
+     "channel": "曉士投資理財教室",
+     "url": "https://www.youtube.com/watch?v=fqtUvYEYyHE",
+     "duration": "5:59"
+    },
+    {
+     "name": "不對稱風險的倉位換算(Options Position Sizing)",
+     "en": "Options position sizing under asymmetric risk",
+     "kind": "walkthrough",
+     "target": "倉位換算、口數計算、不對稱風險、sizing 公式",
+     "dose": "跟著影片把公式抄成自己的算式，用 2 個不同權利金的合約各算一次可買/可賣口數；之後每次下單前套用一次",
+     "title": "Bill Poulos & Profits Run Present: Options Trading Risk Management Formula (How Much To Trade)",
+     "channel": "Profits Run",
+     "url": "https://www.youtube.com/watch?v=cPrr8QcoPl0",
+     "duration": "4:02"
+    },
+    {
+     "name": "「權利金小所以沒風險」:選擇權最貴的誤解",
+     "en": "The 'small premium means no risk' fallacy — the most expensive misconception in options",
+     "kind": "replay",
+     "target": "賣方尾部風險、0206 事件、權利金誤解、跳空、保證金追繳",
+     "dose": "看 1 次即可；之後每次覺得「這口權利金才幾百塊很安全」時回來重看事件經過那 2 分鐘",
+     "title": "細探台灣金融史上著名的\"0206選擇權屠殺事件\"",
+     "channel": "勳仔的理財小角落",
+     "url": "https://www.youtube.com/watch?v=7V5VA0kRzho",
+     "duration": "9:05"
+    }
+   ]
+  },
+  {
+   "id": "ch8-u3",
+   "name": "新手最常見的死法",
+   "type": "practice",
+   "assessment": "打開最近 20 筆選擇權成交紀錄（券商 App 的歷史委託即可），逐筆貼四個標籤：①進場日是否在標的財報公布前 48 小時內且為買方（是＝財報梭哈）；②部位是否為無對應保護腳的賣方（是＝裸賣）；③到期日是否等於進場日（是＝0DTE）；④該筆是否在前一筆虧損後 24 小時內、同方向、且口數更大（是＝報復性加倉）。任一標籤出現 3 次以上，就把該類寫進「下單前檢查清單」貼在螢幕邊，並在券商設定中對該類商品降低可下單口數上限。一個月後用同樣方法重數一次：次數沒下降，代表清單無效，改用實體隔離（財報週停買買方、取消裸賣權限）。",
+   "tight": [
+    "賭徒心態（虧損後想一把翻本）",
+    "對高槓桿商品的過度自信",
+    "財報、0DTE 等高波動事件的參與衝動"
+   ],
+   "weak": [
+    "停損執行力",
+    "倉位與口數控制",
+    "隱含波動率與時間價值的風險感知",
+    "虧損後的復盤習慣"
+   ],
+   "lesson": {
+    "name": "新手最常見的死法（總覽）",
+    "en": "How Beginners Blow Up: The Common Death Traps",
+    "kind": "explainer",
+    "target": "新手地雷、倉位控制、停損紀律、買方風險、賣方風險",
+    "dose": "全片 925 秒完整看一遍，邊看邊把自己已踩過或正在踩的地雷編號抄下來，對照本單元四個動作影片",
+    "title": "新手地雷你踩了幾顆？選擇權教學，給新手的前4週交易建議。",
+    "channel": "不預測漲跌",
+    "url": "https://www.youtube.com/watch?v=B6P7DliJls8",
+    "duration": "15:25",
+    "why": "台灣選擇權教學頻道「不預測漲跌」逐顆點名新手地雷並給出前四週交易建議，主題與單元名稱「新手最常見的死法」直接對應；繁中、925 秒落在主課區間、觀看數過門檻。簡中候選「5大新手期权错误！30万美元的教训」（139,770 觀看）品質亦佳，但依語言優先序繁中勝出。"
+   },
+   "drills": [
+    {
+     "name": "財報梭哈買 Call:IV Crush 的下場",
+     "en": "All-in Earnings Calls: The IV Crush Aftermath",
+     "kind": "explainer",
+     "target": "IV Crush、隱含波動率、財報行情、買方權利金",
+     "dose": "看 1 次（583 秒），寫下「股價漲了 call 還是賠錢」的成立條件，以及影片給的三個迴避法",
+     "title": "3 Ways to Avoid IV Crush | Why Your Calls Lose Money When the Stock Goes Up",
+     "channel": "InTheMoney",
+     "url": "https://www.youtube.com/watch?v=v846B7hs9xg",
+     "duration": "9:43"
+    },
+    {
+     "name": "0DTE 當沖:時間價值歸零的速死之路",
+     "en": "0DTE Day Trading: Fast Death by Theta",
+     "kind": "explainer",
+     "target": "0DTE、時間價值、Theta 衰減、當沖",
+     "dose": "看 1 次（316 秒），列出 0DTE 與一般到期日選擇權的三個風險差異，標出影片中散戶虧損的統計數字",
+     "title": "0DTE: Inside the Explosion of Ultra-Risky Options Trading | WSJ",
+     "channel": "The Wall Street Journal",
+     "url": "https://www.youtube.com/watch?v=5atTocDOTpY",
+     "duration": "5:16"
+    },
+    {
+     "name": "凹單與報復性加倉:虧損復盤與紀律重建",
+     "en": "Bag-holding and Revenge Sizing: Loss Review and Discipline Rebuild",
+     "kind": "explainer",
+     "target": "凹單、報復性加倉、停損紀律、交易心理",
+     "dose": "看 1 次（309 秒），對照自己最近一次連續虧損：當時是凹單、攤平還是加倉？照影片框架寫下下次遇到同情境的預定動作",
+     "title": "股市極思考EP10：在股市賠錢時，我們到底該做什麼？（遭遇跳空、凹單、連續虧損）",
+     "channel": "JG說真的",
+     "url": "https://www.youtube.com/watch?v=-hXMPM5WGcs",
+     "duration": "5:09"
+    }
+   ]
+  }
+ ]
 }

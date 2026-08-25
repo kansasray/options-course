@@ -167,29 +167,13 @@
     "drill 3 捨繁中候選（斜槓投資達人 CC 批判片）因描述實查顯示不含 wheel 整體與跌深情境，語言讓位給主題精準度"
    ],
    "lesson": {
-    "name": "Wheel 策略主課：Sell Put 與 Covered Call 的收租循環",
-    "en": "The Wheel: cycling cash-secured puts into covered calls",
-    "kind": "explainer",
-    "target": "Wheel 循環、Sell Put、Covered Call、權利金、現金流、NVDA 實例",
-    "dose": "全片一次看完，約 20 分鐘",
-    "title": "（含金量破表）你唯一須要的期權策略：我如何每週穩定獲利$500美元？學會了一生受用！",
-    "channel": "Nick 美股咖啡館",
-    "url": "https://www.youtube.com/watch?v=iJ191xHOXVg",
-    "duration": "20:11",
-    "why": "繁中（台灣國語）觀看數最高的 Wheel 教學：影片 tags 實查證實內容為 sell put＋sell covered call（NVDA 實例），且在「wheel策略 選擇權 教學」「車輪策略 sell put covered call」「wheel strategy 期權 教學」三個查詢都排第一。同題繁中對手 Kelvin NO（粵語，9,312 觀看）與簡中天哥（9,293 觀看）在語言與觀看數都落後。"
+    "title": "Get Paid to Wait: The Wheel Strategy Explained in 10 Minutes",
+    "channel": "Markus Heitkoetter - Investor & Lifelong Learner",
+    "url": "https://www.youtube.com/watch?v=ab1V43DxfgI",
+    "duration": "9:42",
+    "why": "本單元的主軸是 wheel 的完整循環(CSP→接股→CC→被 call 走),這支專講循環全貌,比沿用上一單元的 CSP 教學片更對題。原主課與 ch6-u2 重複,依「同章不重複主課」規則替換;drills 保留追蹤試算、反方觀點(Why I DON'T Use the Wheel)與 CC 轉倉實作,循環的正反兩面都有。"
    },
    "drills": [
-    {
-     "name": "Wheel 策略完整循環:CSP、接股、CC、被 Call 走",
-     "en": "The full wheel cycle: CSP, assignment, CC, called away",
-     "kind": "explainer",
-     "target": "Wheel 循環、Cash-Secured Put、接股、Covered Call、被 Call 走、損益兩平",
-     "dose": "全片一遍，邊看邊在紙上畫出四階段循環圖",
-     "title": "Get Paid to Wait: The Wheel Strategy Explained in 10 Minutes",
-     "channel": "Markus Heitkoetter - Investor & Lifelong Learner",
-     "url": "https://www.youtube.com/watch?v=ab1V43DxfgI",
-     "duration": "9:42"
-    },
     {
      "name": "Wheel 每一步的損益與持股成本計算",
      "en": "Tracking P&L and cost basis at each step of the wheel",

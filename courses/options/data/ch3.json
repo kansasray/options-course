@@ -1,5 +1,157 @@
 {
  "chapter": "CH3",
  "title": "Greeks:看得懂就好",
- "units": []
+ "units": [
+  {
+   "id": "ch3-u1",
+   "name": "Delta 與 Gamma:方向與加速度",
+   "type": "concept",
+   "assessment": "打開券商的選擇權 T 字報價表自測三步：(1) 挑一檔價平 Call，抄下 Delta 與權利金，隔天收盤後算「權利金實際變化 ÷ 標的漲跌點數」，與昨天抄的 Delta 比對，誤差三成內代表會讀 Delta；(2) 同一天抄下價平與深價外各一檔的 Delta，隔天再抄一次，價平那檔的 Delta 變動應明顯大於深價外，這個差距就是 Gamma 在作用；(3) 到期前一天盯同一檔價平合約半小時，權利金在歸零與翻倍之間來回跳，即親眼驗證「臨到期 ATM 像擲硬幣」。三步都對得上，本單元過關。",
+   "tight": [
+    "Delta 基本定義：中文候選充足（老鲁随笔、PowerUpGammas、斜槓投資達人）",
+    "Delta≈行權機率：英文有標題精準命中（Option Alpha）",
+    "Gamma 概念：主課中文段落＋英文短片雙保險",
+    "到期日／0DTE 風險素材充足（WSJ、tastylive、Option Alpha 多支合格）"
+   ],
+   "weak": [
+    "600 秒內的中文 Gamma 專講缺片：合格中文 Gamma 片全在 968s 以上",
+    "「Delta≈行權機率」無中文專講命中，只能靠英文",
+    "主課為粵語繁中（對沖王道），台灣國語觀眾需開字幕；台灣國語的雙主題長版主課目前找不到（最長僅 303s）"
+   ],
+   "lesson": {
+    "name": "Delta 與 Gamma：方向與加速度（主課）",
+    "en": "Option Greeks in one lesson: Delta & Gamma — direction and acceleration",
+    "kind": "explainer",
+    "target": "Delta、Gamma、希臘參數總覽、方向、加速度、實際應用",
+    "dose": "完整看一遍（約 13 分鐘）。本單元只需抓住 Delta（方向敏感度）與 Gamma（Delta 的變化率）兩段，其他參數聽過即可，後續單元會回頭講",
+    "title": "對沖王道｜第十六集｜期權基礎知識懶人包｜期權參數｜希臘參數的應用｜Greeks",
+    "channel": "對沖王道",
+    "url": "https://www.youtube.com/watch?v=q_lu0WMlpq0",
+    "duration": "13:17",
+    "why": "繁中候選裡唯一同時滿足三件事的片：長度落在主課帶（797s）、把 Delta/Gamma 在內的希臘參數講完整、還帶到實際應用，符合本章「看得懂就好」的定位。台灣國語的替代品（斜槓投資達人 5zmTARc-ScY）只有 303s，對雙主題主課太薄；英文 projectoption（SFebmSYSZA8, 885s, 164k views）製作更精緻，但語言優先序（繁中＞英文）下讓位。注意：本片為粵語發音、繁中字幕，台灣觀眾靠字幕無礙"
+   },
+   "drills": [
+    {
+     "name": "Delta 是什麼：股價動 1 元，選擇權動多少",
+     "en": "What is Delta: how much the option moves when the stock moves $1",
+     "kind": "explainer",
+     "target": "Delta、方向敏感度、權利金變化、對沖比率",
+     "dose": "看完後暫停，用片中例子自己算一次：股價 +1 元 × Delta ＝ 權利金預期變化，再開報價表對一檔真實合約",
+     "title": "美股期權交易：秒懂希腊字母Delta，告别亏损！#期权交易 option delta",
+     "channel": "老鲁随笔—美股期權交易",
+     "url": "https://www.youtube.com/watch?v=Ra7rJlQwEOs",
+     "duration": "8:24"
+    },
+    {
+     "name": "Delta 的第二種讀法：近似被行權的機率",
+     "en": "Delta's second reading: an approximation of the probability of expiring ITM",
+     "kind": "explainer",
+     "target": "Delta、行權機率、價內機率、履約價選擇",
+     "dose": "看完記住一句話：Delta 0.30 ≈ 約三成機率到期價內。然後開 T 字報價表挑三個履約價，驗證 Delta 與「感覺上的價內機率」是否對得上",
+     "title": "Using Option Delta As A Substitute For ITM Probability",
+     "channel": "Option Alpha",
+     "url": "https://www.youtube.com/watch?v=0SbXHjKij3I",
+     "duration": "4:04"
+    },
+    {
+     "name": "Gamma 是什麼：Delta 的變速器",
+     "en": "What is Gamma: the accelerator that changes your Delta",
+     "kind": "explainer",
+     "target": "Gamma、Delta 變化率、加速度、價平",
+     "dose": "看到數字例子時暫停，手算一次：新 Delta ＝ 舊 Delta ＋ Gamma × 股價變化，算對才繼續看",
+     "title": "8. Gamma",
+     "channel": "Zerodha Varsity",
+     "url": "https://www.youtube.com/watch?v=koJQc3fqxjk",
+     "duration": "5:52"
+    },
+    {
+     "name": "臨到期的 ATM 選擇權為什麼像賭硬幣",
+     "en": "Why near-expiry ATM options behave like a coin flip",
+     "kind": "explainer",
+     "target": "Gamma 風險、0DTE、到期日、價平、二元損益",
+     "dose": "當背景知識看完即可（316s）。重點抓一件事：越接近到期，ATM 合約的損益越接近「全有或全無」，這就是 Gamma 極大化的表現",
+     "title": "0DTE: Inside the Explosion of Ultra-Risky Options Trading | WSJ",
+     "channel": "The Wall Street Journal",
+     "url": "https://www.youtube.com/watch?v=5atTocDOTpY",
+     "duration": "5:16"
+    }
+   ]
+  },
+  {
+   "id": "ch3-u2",
+   "name": "Theta 與 Vega:時間與波動",
+   "type": "concept",
+   "assessment": "打開你券商 App 的選擇權報價頁,找一口價平附近的買權,抄下 Delta、Gamma、Theta、Vega 四個數字。然後不看任何資料做兩個預估並寫下來:(1) 假設明天行情完全不動,權利金會少多少(用 Theta);(2) 假設 IV 上升 1%,權利金會多多少(用 Vega)。隔一個交易日回到同一口,對照實際權利金變化:方向對、數量級對(同一個位數)就算過關,連做三個交易日。闔上筆記,默寫四個 Greeks 對買方與賣方的 4×2 正負號表,再對照影片核對,寫錯任何一格就回去重看動作 3。",
+   "tight": [
+    "25 個查詢全部批次執行,原始 20 筆結果留檔於 scratchpad/curate-ch3-u2/1-25.txt 可回查被濾掉的片",
+    "5 支影片 id、標題、頻道、秒數、觀看數全部照抄 yt-dlp 輸出,無憑記憶拼湊",
+    "主課 1037s 落在 240-1440 區間;四支動作 270/283/303/484s 全在 30-600 區間",
+    "觀看數門檻 5000 全數通過,最低為動作 3 的 5113"
+   ],
+   "weak": [
+    "繁中圈沒有 Theta 或 Vega 的專講短片(≥5000 觀看且 ≤600s),動作 1、2 只能用英文片(Option Alpha、Zerodha Varsity)",
+    "「買賣方正負號表」沒有任何語言的專題影片,動作 3 以繁中四 Greeks 總覽近似,表本身要靠讀者默寫補完",
+    "動作 4 的繁中首選(T字報價表教學 812s)被 600s 上限擋掉,改用美股 Fidelity 介面實走,台股報價頁欄位名稱需讀者自行對照",
+    "主課為簡中(PowerUpGammas),且分上下集,本片不含 Delta 完整講解(上集才有,本單元不需要)"
+   ],
+   "lesson": {
+    "name": "Theta 與 Vega:時間與波動",
+    "en": "Theta & Vega: Time and Volatility",
+    "kind": "explainer",
+    "target": "Theta、Vega、Gamma、時間價值、隱含波動率、希臘字母",
+    "dose": "17 分鐘完整看一遍;Delta/Rho 段快轉,Theta 與 Vega 兩段各多看一次,各用一句話寫下定義",
+    "title": "期权希腊字母指南[2021年] 下集 | Complete Guide for Option Greeks: Delta, Theta, Gamma, Vega and Rho, pt 2",
+    "channel": "PowerUpGammas",
+    "url": "https://www.youtube.com/watch?v=g-pyFTXuCBc",
+    "duration": "17:17",
+    "why": "系列下集專講 Theta/Gamma/Vega/Rho,17 分鐘的篇幅讓兩個主角各自有完整的例子,正對本單元主軸。繁中候選(斜槓投資達人 303s、Kelvin NO 401s)一支影片塞四五個 Greeks,平均每個不到 90 秒,深度不對等,故依「同等品質才比語言」原則取簡中這支。"
+   },
+   "drills": [
+    {
+     "name": "Theta 是什麼:每天的租金,買方付、賣方收",
+     "en": "What is Theta: daily rent — buyers pay, sellers collect",
+     "kind": "explainer",
+     "target": "Theta、時間價值流失、買方、賣方",
+     "dose": "4.5 分鐘看一遍,看完用自己的話寫一句:為什麼 Theta 對買方是負、對賣方是正",
+     "title": "Understanding Theta - Time Decay Of Options",
+     "channel": "Option Alpha",
+     "url": "https://www.youtube.com/watch?v=4X3HBFntkds",
+     "duration": "4:30"
+    },
+    {
+     "name": "Vega 是什麼:IV 動 1% 的損益",
+     "en": "What is Vega: P&L per 1% move in IV",
+     "kind": "explainer",
+     "target": "Vega、隱含波動率、權利金、損益",
+     "dose": "4.7 分鐘看一遍,抄下定義句:IV 每動 1%,權利金動多少就是 Vega",
+     "title": "10. Vega",
+     "channel": "Zerodha Varsity",
+     "url": "https://www.youtube.com/watch?v=2hmF5gqKEUg",
+     "duration": "4:43"
+    },
+    {
+     "name": "四個 Greeks 買方與賣方的正負號表",
+     "en": "Greek sign table for buyers vs sellers",
+     "kind": "explainer",
+     "target": "Greeks、正負號、買方、賣方、部位方向",
+     "dose": "5 分鐘看一遍,闔上影片默寫 4×2 正負號表(四個 Greeks × 買方/賣方),再回放對答案",
+     "title": "什麼是Delta、Gamma、Theta、Vega？",
+     "channel": "斜槓投資達人",
+     "url": "https://www.youtube.com/watch?v=5zmTARc-ScY",
+     "duration": "5:03"
+    },
+    {
+     "name": "報價頁實戰:一口選擇權的四個數字怎麼讀",
+     "en": "Quote page in practice: reading the four numbers on one option",
+     "kind": "walkthrough",
+     "target": "報價頁、選擇權鏈、Delta、Theta、Vega、實戰",
+     "dose": "8 分鐘跟著影片走一遍,再打開自己券商的選擇權報價頁,逐欄找到同名欄位(Delta/Theta/Vega/IV),抄下價平附近一口的四個數字",
+     "title": "Fidelity Option Chain: EVERYTHING You Need to Know!",
+     "channel": "The Retirement Income Investor",
+     "url": "https://www.youtube.com/watch?v=wHzK35QZ6WQ",
+     "duration": "8:04"
+    }
+   ]
+  }
+ ]
 }
