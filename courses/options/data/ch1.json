@@ -1,5 +1,221 @@
 {
  "chapter": "CH1",
  "title": "選擇權是什麼:四個基本部位",
- "units": []
+ "units": [
+  {
+   "id": "ch1-u1",
+   "name": "四個基本部位:long/short × call/put",
+   "type": "concept",
+   "assessment": "關掉影片,拿一張紙畫 2×2 四宮格,逐格徒手畫出到期損益圖(橫軸=到期時標的價格,縱軸=損益):買Call、買Put、賣Call、賣Put。畫完用三條規則自我批改:(1) 買方兩張的水平段在虧損側,深度剛好等於付出的權利金;(2) 賣方兩張是對應買方那張沿橫軸上下翻轉,水平段在獲利側、高度=收到的權利金;(3) 指著賣Call那張,虧損線必須往右上方無限延伸才算對,而賣Put的虧損最多到標的跌到 0 為止。接著遮住圖,口頭回答:「哪兩個部位最大損失=權利金?哪一個虧損無限?哪一個收權利金但下檔會大虧?」任何一格畫錯或答錯,回去重看該格對應的動作影片,隔天空白重畫一次,直到四格連兩天全對。",
+   "tight": [],
+   "weak": [],
+   "lesson": {
+    "name": "選擇權是什麼:四個基本部位總覽",
+    "en": "Options basics: the four positions (long/short × call/put)",
+    "kind": "explainer",
+    "target": "選擇權定義、買權、賣權、四個基本部位、權利金、履約價",
+    "dose": "全片 924 秒完整看一遍,看到四種策略段落時暫停,先自己猜每個部位的損益方向再繼續",
+    "title": "【選擇權教學】選擇權是什麼？怎麼買？一次搞懂買權、賣權、四種選擇權交易策略與獲利關鍵！",
+    "channel": "永豐金證券",
+    "url": "https://www.youtube.com/watch?v=_hvNT0CNRLE",
+    "duration": "15:24",
+    "why": "唯一一支台灣繁中、且結構與本單元一對一對應的片:先講選擇權是什麼,再講買權/賣權,最後把四種基本交易策略走完;券商官方頻道,用語(買權/賣權/權利金)與台灣市場及本課後續動作影片一致。Terry Chen(185k views)與 JQXkjmGrPKs(HK 粵語,188k views)也合格,但前者不以四部位為骨架、後者用語為港式(認購/認沽),故取結構與用語最貼合者。"
+   },
+   "drills": [
+    {
+     "name": "買進買權 Long Call:損益方向與最大損失",
+     "en": "Long Call: payoff direction and maximum loss",
+     "kind": "explainer",
+     "target": "買進買權、損益圖、最大損失、權利金、看漲",
+     "dose": "全片 520 秒,聚焦 Long Call 段;看完關掉影片,徒手畫一次 Long Call 到期損益圖並標出最大損失=權利金",
+     "title": "[選擇權策略🔍]買進買權、買進賣權 | Long Call and Long Put",
+     "channel": "OP投資理財學院",
+     "url": "https://www.youtube.com/watch?v=uSMTToUGjno",
+     "duration": "8:40"
+    },
+    {
+     "name": "買進賣權 Long Put:損益方向與最大損失",
+     "en": "Long Put: payoff direction and maximum loss",
+     "kind": "explainer",
+     "target": "買進賣權、損益圖、最大損失、權利金、看跌",
+     "dose": "看 Long Put 段(前半)即可,Short Put 段之後第四支會再回來;看完畫出 Long Put 損益圖,確認虧損側是平的、深度=權利金",
+     "title": "【期權教學】基本期權認識 - 期權四式 - Long Put Short Put｜股票入門｜新手教學｜投機｜由傻散變大師",
+     "channel": "由傻散變大師 - 生活理財頻道",
+     "url": "https://www.youtube.com/watch?v=fAriflX_VLw",
+     "duration": "8:00"
+    },
+    {
+     "name": "賣出買權 Short Call:收權利金但上檔虧損無限",
+     "en": "Short Call: collect premium, unlimited upside loss",
+     "kind": "explainer",
+     "target": "賣出買權、權利金收入、無限虧損、上檔風險、裸賣",
+     "dose": "聚焦 Short Call 段(後半);看完在 Long Call 損益圖旁畫出 Short Call,確認兩張沿橫軸互為鏡像、虧損線往右上無限延伸",
+     "title": "【期權教學】基本期權認識 - 期權四式 - Long Call Short Call｜股票入門｜新手教學｜投機｜由傻散變大師",
+     "channel": "由傻散變大師 - 生活理財頻道",
+     "url": "https://www.youtube.com/watch?v=7cX2dZVZUck",
+     "duration": "7:58"
+    },
+    {
+     "name": "賣出賣權 Short Put:收權利金與下檔大幅虧損",
+     "en": "Short Put: collect premium, large downside loss",
+     "kind": "explainer",
+     "target": "賣出賣權、權利金收入、下檔風險、接股票、保證金",
+     "dose": "全片 557 秒;影片講收租優點居多,看完務必自己補畫損益圖,標出標的跌到 0 時的最大虧損=履約價-權利金",
+     "title": "雙贏賺錢法！如何用Short Put 優質股票撈底+穩定收租，實現穩定被動收入！留意風險｜期權基本四式 【期權收租寶｜新手指南】 EP５ #投資 #小寶",
+     "channel": "富翁電視MTTV",
+     "url": "https://www.youtube.com/watch?v=jaqNJkLz1QU",
+     "duration": "9:17"
+    }
+   ]
+  },
+  {
+   "id": "ch1-u2",
+   "name": "買方與賣方:權利、義務與保證金",
+   "type": "concept",
+   "assessment": "打開你券商的選擇權模擬下單頁（或期交所/券商的保證金試算網頁），挑一檔近月合約做四步自測：(1) 對著報價唸出買這口要付多少權利金、換到什麼權利、最壞情況虧多少；(2) 唸出賣這口收多少權利金、承擔什麼義務、什麼情況會被指派；(3) 實際查出賣出這一口所需的保證金金額，確認它遠大於收到的權利金，並說出你的券商哪個權限層級才允許這種部位；(4) 假設標的逆向走 5%，用損益試算或到期損益公式算出裸賣虧損是權利金的幾倍。四步中任何一步說不出具體數字，就回去重看對應的那支影片。",
+   "tight": [
+    "主課直接以買方風險有限/賣方風險無限對照展開，與單元主軸一對一貼合",
+    "裸賣風險有繁中專題片（不預測漲跌，332s），立場與單元警示一致",
+    "券商權限開通有繁中 CC 字幕實操片（Firstrade），權限層級講得具體",
+    "主課與四支動作片中三支為繁中，符合語言優先序"
+   ],
+   "weak": [
+    "assignment 主題查無合格繁中片（專題查詢僅 5 筆、0 符合門檻），以英文專題片替代，讀者需能聽英文或開字幕",
+    "動作三的『賣方保證金計算』面向著墨較少：權限片重開通流程，繁中保證金片多為台指期貨語境（如 6hYdR14aSpA），未納入",
+    "主課與動作四為台指選擇權語境，動作二、三為美股券商語境，讀者需自行對應市場差異"
+   ],
+   "lesson": {
+    "name": "買方與賣方:權利、義務與保證金",
+    "en": "Buyers vs sellers: rights, obligations, and margin",
+    "kind": "explainer",
+    "target": "買方、賣方、權利、義務、權利金、保證金、風險不對稱",
+    "dose": "全片看完一次；第二次只跳看買方與賣方風險對照段，親手抄下「付/收權利金、權利/義務、最大損失」三欄對照表",
+    "title": "選擇權基礎教學新手必看(買方::風險有限獲利無限==賣方::風險無限獲利有限)",
+    "channel": "專職人生 Old Wu",
+    "url": "https://www.youtube.com/watch?v=V_qQ-m71ruw",
+    "duration": "9:10",
+    "why": "標題與內容直接以「買方風險有限獲利無限、賣方風險無限獲利有限」框住本單元主軸，一支片同時講到權利義務與賣方風險，繁中、550 秒、2.8 萬次觀看，比泛論式入門片更貼題"
+   },
+   "drills": [
+    {
+     "name": "買方付權利金:買到權利而非義務",
+     "en": "Buyer pays premium: a right, not an obligation",
+     "kind": "explainer",
+     "target": "權利金、買方權利、非義務、買權、賣權、放棄履約",
+     "dose": "看完全片；在講到權利金與買方可放棄履約處暫停，用自己的話重述「付權利金換到的是選擇權不是義務」再繼續",
+     "title": "新手入門選擇權！超簡單讓你搞懂基本規則【交易肯爺】",
+     "channel": "微學we-share",
+     "url": "https://www.youtube.com/watch?v=jMe2wlHMHUw",
+     "duration": "9:45"
+    },
+    {
+     "name": "賣方收權利金:義務與被指派 assignment",
+     "en": "Seller collects premium: obligation and assignment",
+     "kind": "explainer",
+     "target": "賣方義務、被指派、assignment、履約、提前指派",
+     "dose": "看完全片；聽到 early assignment 條件時暫停，寫下「什麼情況最容易被指派」兩條，看完對答案",
+     "title": "Option Assignment Risk Explained - Everything You Need To Know",
+     "channel": "Markus Heitkoetter - Investor & Lifelong Learner",
+     "url": "https://www.youtube.com/watch?v=zekoBDUHTR8",
+     "duration": "7:43"
+    },
+    {
+     "name": "賣方保證金與券商選擇權權限層級 option levels",
+     "en": "Seller margin and broker option approval levels",
+     "kind": "walkthrough",
+     "target": "券商權限層級、option levels、開通流程、賣方保證金、裸賣資格",
+     "dose": "對照自己券商的開通頁面跟著看一次；記下各權限層級分別允許哪些部位、哪些層級才准裸賣",
+     "title": "【CC字幕】如何開通期權交易權限及常見問題 【Firstrade】【Jo來聊美股】",
+     "channel": "工程師Joseph - 理財揪舒服",
+     "url": "https://www.youtube.com/watch?v=EsxkJ7JgCK0",
+     "duration": "6:27"
+    },
+    {
+     "name": "未定義風險:裸賣選擇權的虧損可遠大於權利金",
+     "en": "Undefined risk: naked selling can lose far more than the premium",
+     "kind": "explainer",
+     "target": "裸賣、未定義風險、無限虧損、權利金倍數、替代策略",
+     "dose": "看完全片；片中舉裸賣虧損案例時暫停，自己算一次「虧損是收到權利金的幾倍」，再看講者給的替代做法",
+     "title": "學2個取代裸賣的高效率方式。選擇權交易我超不建議裸賣，有到\"超\"的程度。快把裸賣收租留結算的危險又過時觀念丟掉！",
+     "channel": "不預測漲跌",
+     "url": "https://www.youtube.com/watch?v=e4vvDpSzBP8",
+     "duration": "5:32"
+    }
+   ]
+  },
+  {
+   "id": "ch1-u3",
+   "name": "為什麼是『美股』選擇權:規格與台灣人的管道",
+   "type": "concept",
+   "assessment": "打開任一免費看盤工具（如 Yahoo Finance）查 AAPL 的選擇權鏈，做三件事：(1) 抄下任一買權的權利金報價，手算 ×100，對照下單試算頁顯示的合約總金額，兩數必須相等；(2) 展開到期日清單，圈出未來一個月內所有日期，標出哪幾個是星期五的週選、哪一個是第三個星期五的月選，並口頭說出美式行權和台指選擇權歐式行權的差別；(3) 依你打算用的管道實測：走複委託就打給營業員問「可以下美股個股選擇權嗎」並逐字記下答覆，走海外券商就登入後截圖帳戶的期權交易權限等級。三項都拿得出具體產出（相等的兩個數字、標好的日期清單、答覆或截圖）才算過關。",
+   "tight": [
+    "海外券商下單示範：繁中 IB/Firstrade/TD 實單教學多支合格（McEJqzLqR0E、-jnF2pvwYlk、8K9V90rKjTA、EsxkJ7JgCK0），任選皆可",
+    "複委託 vs 海外券商比較：繁中高觀看片密集（mA45DklHSxY 3.2萬、3Kwplt9MYss 6.7萬、mK1TyP_YXls 10萬、P8JV9zF9niU），限制面覆蓋充分",
+    "美股期權入門講解：繁中/簡中 240-1440s 帶合格片超過 15 支，主課可替換性高（備選 ZTyKlTVhIkY、JW0T0Gn0pn8、se-UwXr1NoE）"
+   ],
+   "weak": [
+    "「一口=100股+權利金報價」查無合格中文專門片（期權 一張 100股 合約：20 筆 0 符合），以英文 Sky View 補位；繁中最接近的 3mnG-ht0N64（買賣價報價介面，240s/5153 views）只覆蓋報價半題",
+    "「美式行權+週選月選」無單支同時覆蓋：入選片只講行權機制，週/月選序列的合格片全是英文（R9wGmuCPSWY、25oQ1LwyTYw）且未入選，建議課程文字補到期日序列說明",
+    "「複委託×美股選擇權」交叉主題查無任何片（三個查詢繞法都只回到一般複委託比較），此限制需在課程文字明確寫出：多數台灣複委託不提供美股個股選擇權下單"
+   ],
+   "lesson": {
+    "name": "為什麼是「美股」選擇權：規格與台灣人的管道",
+    "en": "Why US stock options: contract specs and access channels for Taiwanese investors",
+    "kind": "explainer",
+    "target": "美股選擇權、買權賣權、權利金、合約規格、期權術語",
+    "dose": "全片一次（約 17 分鐘），邊看邊把片中出現的規格名詞（權利金、履約價、到期日）抄成一頁對照表",
+    "title": "一次搞懂選擇權（期權）",
+    "channel": "Terry Chen 泰瑞",
+    "url": "https://www.youtube.com/watch?v=dqAsQyRJHAg",
+    "duration": "17:18",
+    "why": "繁中、以美股期權語境講解的完整入門，長度正好落在主課帶；18.5 萬觀看是繁中同類片最高之一，能把台灣學員從台指選擇權的語彙接到美股期權的規格語彙，為後面四個動作片鋪底"
+   },
+   "drills": [
+    {
+     "name": "美股選擇權合約規格：一口等於 100 股與權利金報價",
+     "en": "US option contract specs: one contract = 100 shares and premium quotes",
+     "kind": "explainer",
+     "target": "合約規格、100股乘數、權利金報價、買賣價差",
+     "dose": "全片一次，看完立刻開任一美股選擇權鏈，抄一筆報價手算 ×100 驗證合約總價",
+     "title": "Options Trading: Understanding Option Prices",
+     "channel": "Sky View Trading",
+     "url": "https://www.youtube.com/watch?v=MiybniIIvx0",
+     "duration": "7:31"
+    },
+    {
+     "name": "美式行權與到期日序列：週選與月選",
+     "en": "American-style exercise and expiration cycles: weeklies vs monthlies",
+     "kind": "explainer",
+     "target": "美式行權、歐式行權、提前行權、行權機制",
+     "dose": "全片一次，看完口頭說出台指選擇權（歐式）與美股個股選擇權（美式）的行權差別",
+     "title": "American vs. European Style Options - Options Adjustments - Options Mechanics",
+     "channel": "Option Alpha",
+     "url": "https://www.youtube.com/watch?v=Yu27K3KB2Wo",
+     "duration": "4:09"
+    },
+    {
+     "name": "台灣人管道一：海外券商交易美股選擇權",
+     "en": "Channel 1 for Taiwanese: trading US options via an overseas broker",
+     "kind": "walkthrough",
+     "target": "海外券商、IB盈透證券、選擇權下單、下單介面",
+     "dose": "全片一次，若已有 IB 帳戶則開模擬倉跟著點一遍下單流程（不送單）",
+     "title": "IB 盈透證券 (interactive broker) 選擇權下單示範教學/選擇權交易/選擇權期貨",
+     "channel": "tradeoptions4living",
+     "url": "https://www.youtube.com/watch?v=McEJqzLqR0E",
+     "duration": "4:33"
+    },
+    {
+     "name": "台灣人管道二：複委託買美股選擇權的限制",
+     "en": "Channel 2 for Taiwanese: limits of sub-brokerage (fuweituo) for US options",
+     "kind": "explainer",
+     "target": "複委託、海外券商比較、商品限制、手續費",
+     "dose": "全片一次，把片中提到的複委託限制逐條抄下，再打給營業員驗證選擇權是否可下單",
+     "title": "投資美股必看！4點告訴你複委託、海外券商怎麼選！複委託沒有比較安全？海外券商更有保障？｜BOS巴菲特線上學院 Buffett Online School",
+     "channel": "投資好朋友 BOS價值投資",
+     "url": "https://www.youtube.com/watch?v=mA45DklHSxY",
+     "duration": "7:40"
+    }
+   ]
+  }
+ ]
 }

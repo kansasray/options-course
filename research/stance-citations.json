@@ -1,0 +1,44 @@
+{
+ "concept-1 賣方風險補償": [
+  {
+   "doi": "10.2469/faj.v70.n6.3",
+   "title": "Covered Call Strategies: One Fact and Eight Myths",
+   "journal": "Financial Analysts Journal",
+   "year": 2014
+  },
+  {
+   "doi": "10.3905/jod.2002.319194",
+   "title": "Return and Risk of CBOE Buy Write Monthly Index",
+   "journal": "The Journal of Derivatives",
+   "year": 2002
+  },
+  {
+   "doi": "10.2469/faj.v31.n4.42",
+   "title": "Risk and Return in CBOE and AMEX Option Trading",
+   "journal": "Financial Analysts Journal",
+   "year": 1975
+  }
+ ],
+ "concept-2 散戶選擇權績效": [
+  {
+   "doi": "10.1016/j.jbankfin.2008.11.005",
+   "title": "Option trading and individual investor performance",
+   "journal": "Journal of Banking &amp; Finance",
+   "year": 2009
+  },
+  {
+   "doi": "10.1111/0022-1082.00226",
+   "title": "Trading Is Hazardous to Your Wealth: The Common Stock Investment Performance of Individual Investors",
+   "journal": "The Journal of Finance",
+   "year": 2000
+  }
+ ],
+ "concept-3 OTM 偏貴": [
+  {
+   "doi": "10.1142/s2010139214500153",
+   "title": "Why Are Put Options So Expensive?",
+   "journal": "Quarterly Journal of Finance",
+   "year": 2014
+  }
+ ]
+}

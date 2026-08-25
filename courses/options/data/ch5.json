@@ -1,5 +1,216 @@
 {
  "chapter": "CH5",
  "title": "Covered Call:Gozilla 的主策略",
- "units": []
+ "units": [
+  {
+   "id": "ch5-u1",
+   "name": "Covered Call 的損益結構",
+   "type": "practice",
+   "assessment": "拿一檔你實際持有（或模擬持有 100 股）的股票，記下現價，從券商報價單選一個高於現價的履約價並抄下該買權的權利金。不看任何影片，親手畫出到期損益圖，然後驗算三個情境的總損益（股票損益＋收到的權利金）：(1) 股價漲到履約價之上 20%、(2) 股價原地不動、(3) 股價下跌超過權利金幅度。檢核點：你的圖右側必須在履約價處轉成水平線，且最大獲利＝（履約價−買進成本）＋權利金；下檔的損益兩平點必須＝買進成本−權利金，跌破它就開始淨虧。最後把同樣的部位輸入券商內建的選擇權損益試算器（或 OptionStrat 之類免費工具），三個情境的數字與你手算的誤差應在權利金的 1% 以內；對不上就回頭找哪一項漏算了。",
+   "tight": [
+    "「是什麼」與「機會成本」兩題繁中資源充足，正反方（收租派 vs 反對派）都有合格片可對照",
+    "主課有專門的繁中 Covered Call 教學系列（tradeoptions4living 14–17 集），之二到之四可直接作為單元延伸",
+    "下檔保護一題的粵語片「賺息蝕價」框架與本單元「保護的極限」完全對題"
+   ],
+   "weak": [
+    "中文圈缺 CC 專屬損益圖拆解短片：四個查詢（covered call 損益圖／备兑开仓 损益图／covered call 圖解 損益／期权 备兑 损益结构 图）合計只命中泛用期權損益曲線，損益圖一站被迫用英文 Fidelity 片，英文較弱的學員需搭配主課的損益段落補完",
+    "主課系列首集偏部位建構，損益圖細節分散在之二之後，單看首集對「截斷」的視覺印象可能不夠深"
+   ],
+   "lesson": {
+    "name": "Covered Call 的損益結構",
+    "en": "P&L Structure of the Covered Call",
+    "kind": "explainer",
+    "target": "Covered Call、掩護性買權、損益結構、權利金、履約價",
+    "dose": "完整看一遍；第二遍在損益說明段落暫停，自己跟著把部位組成與損益條件抄寫一次",
+    "title": "選擇權教學(14) - Covered Call 掩護性買權策略 之一",
+    "channel": "tradeoptions4living",
+    "url": "https://www.youtube.com/watch?v=eDjMJ5_NZ-U",
+    "duration": "15:27",
+    "why": "繁中專門教學頻道的 Covered Call 系列首集，從部位建構講到損益條件，正對本單元「損益結構」主題；比泛講選擇權的高流量片（如 Terry Chen 1038s）更聚焦，比簡中高流量片（美投讲美股 740s/23 萬觀看）符合繁中優先序。同系列還有之二到之四（-OAhxaSwXK0、Q7XhCJrmqm0、_a7GBRggeVw）可作延伸。"
+   },
+   "drills": [
+    {
+     "name": "Covered Call 是什麼：持股加賣出買權的合成部位",
+     "en": "What a Covered Call Is: Stock plus Short Call",
+     "kind": "explainer",
+     "target": "部位組成、持股、賣出買權、Short Call、合成部位、現金流",
+     "dose": "看一遍，看完不看影片自己寫出「Covered Call＝持有 100 股＋賣出 1 口買權」並各標出誰付誰收權利金",
+     "title": "期權讓股票製造現金流！不放過任何賺錢的機會！期權策略 Covered Call！| 空盒知識",
+     "channel": "空盒知識 Box Knowledge",
+     "url": "https://www.youtube.com/watch?v=L0yjMRltE4s",
+     "duration": "6:56"
+    },
+    {
+     "name": "Covered Call 損益圖：上檔獲利在履約價被截斷",
+     "en": "Covered Call Payoff Diagram: Upside Capped at the Strike",
+     "kind": "explainer",
+     "target": "損益圖、履約價、獲利上限、最大獲利、到期損益",
+     "dose": "跟著影片暫停畫一次到期損益圖，標出履約價位置與右側水平的最大獲利線",
+     "title": "Option Selling Strategies: Covered Calls Explained | Fidelity Investments",
+     "channel": "Fidelity Investments",
+     "url": "https://www.youtube.com/watch?v=wwceg3LYKuA",
+     "duration": "5:28"
+    },
+    {
+     "name": "權利金緩衝：下檔保護的真實範圍與極限",
+     "en": "Premium Cushion: The Real Extent and Limits of Downside Protection",
+     "kind": "explainer",
+     "target": "權利金緩衝、下檔保護、賺蝕位、損益兩平點、保護極限、賺息蝕價",
+     "dose": "看一遍後，用自己一檔持股的實際權利金報價算出保護幅度＝權利金÷股價，並算出跌破哪個價位開始淨虧損",
+     "title": "[期權入門05] Covered Call 賺息蝕價？賣樓式「收租」陷阱！風險、回報、賺蝕位一次過講清！",
+     "channel": "啊梨投資功課丨新手理財成長筆記",
+     "url": "https://www.youtube.com/watch?v=DlUvCsBNGiE",
+     "duration": "8:46"
+    },
+    {
+     "name": "穩定收入的代價：放棄大漲的機會成本",
+     "en": "The Price of Steady Income: Giving Up the Big Rally",
+     "kind": "explainer",
+     "target": "機會成本、獲利截斷、大漲行情、策略取捨、長期報酬",
+     "dose": "看一遍，列出影片反對賣 CC 的理由各一句，再各寫一句「什麼情況下這條理由不成立」——練的是取捨判斷不是背結論",
+     "title": "你真的不該再繼續賣Covered Call的",
+     "channel": "斜槓投資達人",
+     "url": "https://www.youtube.com/watch?v=j7RMw35R5N0",
+     "duration": "6:17"
+    }
+   ]
+  },
+  {
+   "id": "ch5-u2",
+   "name": "參數怎麼選:delta、天期與水位",
+   "type": "practice",
+   "assessment": "打開券商的選擇權鏈自我檢核：(1) 選一檔自己的持股，找 30–45 天後到期的 call，寫下 delta 0.25 與 0.30 對應的履約價和權利金，並口頭說出「delta 0.25 約等於 25% 被行權機率」這句話的意思；(2) 同一履約價抄下 7 天、45 天、90 天三個到期日的權利金，各除以天數算出每日收租，驗證短天期單日較高、總額較低，並寫一句自己選哪個天期、為什麼；(3) 盤點持股總股數，寫下打算賣 call 的股數與比例。若答案是 100%，回去重看動作三，直到能寫出一句「我留 X% 不賣 call，因為＿＿」才算過關。",
+   "tight": [
+    "delta 選擇:英文資源豐富且直答（Brad Finn、tastylive、Alan Ellman、projectoption 多支合格）",
+    "DTE 取捨:tastylive 有回測實證片，另有 Options Trading IQ 框架片可交叉",
+    "CC 中文入門:繁中/粵語/簡中教學量大（tradeoptions4living 系列、工程師Joseph、富翁電視MTTV）"
+   ],
+   "weak": [
+    "「只對部分持股賣 call / 留倉不設上限」全網無專題片，中英 12+ 組查詢僅找到講機會成本的間接論據片",
+    "中文圈沒有 CC 參數選擇（delta+DTE）專題，主課只能取英文",
+    "「期權 delta 0.3 行使價 機率」一查回 0 筆疑似限流，改寫關鍵字後重查已補上"
+   ],
+   "lesson": {
+    "name": "參數怎麼選:delta、天期與水位",
+    "en": "Choosing covered call parameters: delta, DTE, coverage",
+    "kind": "explainer",
+    "target": "履約價選擇、delta 區間、到期天期、Covered Call 參數框架",
+    "dose": "全片看完，邊看邊記下影片給的 delta 區間與 DTE 建議值，之後開自己的選擇權鏈對照",
+    "title": "The Exact Strike and DTE Framework for Selling Covered Calls",
+    "channel": "Options Trading IQ",
+    "url": "https://www.youtube.com/watch?v=vCKAPhyyqAU",
+    "duration": "8:42",
+    "why": "描述明確寫出「exact framework for picking covered call strikes and DTE, with specific delta ranges, real Nvidia examples」，一支片同時覆蓋本單元 delta 與天期兩軸，且附真實股票範例；中文圈查遍四批關鍵字只有 CC 入門課，沒有參數選擇專題，故取貼題的英文片"
+   },
+   "drills": [
+    {
+     "name": "Delta 與被行權機率:為什麼賣 delta 0.25 到 0.3 的 call",
+     "en": "Why sell the 0.25-0.30 delta call",
+     "kind": "explainer",
+     "target": "delta 區間、被行權機率、履約價",
+     "dose": "全片看完，記下他建議的 delta 區間與理由，再開券商選擇權鏈找出對應履約價",
+     "title": "BEST Delta For Covered Calls And Cash Secured Puts",
+     "channel": "Brad Finn",
+     "url": "https://www.youtube.com/watch?v=Ei8g3i_2OiI",
+     "duration": "4:50"
+    },
+    {
+     "name": "到期天期取捨:短天期 theta 加速 vs 長天期權利金總額",
+     "en": "Short DTE theta acceleration vs long DTE total premium",
+     "kind": "explainer",
+     "target": "到期天期、theta 加速、權利金總額、DTE 實測",
+     "dose": "全片看完，注意他們回測比較不同 DTE 的結論，對照自己偏好的收租週期",
+     "title": "What Is The Right DTE?  … We Tested It To Find Out",
+     "channel": "tastylive",
+     "url": "https://www.youtube.com/watch?v=fFaW9OENf8c",
+     "duration": "9:41"
+    },
+    {
+     "name": "持股水位:為什麼只對部分持股賣 call、留一部分不設上限",
+     "en": "Coverage level: sell calls on only part of the position",
+     "kind": "explainer",
+     "target": "持股水位、上檔空間、Covered Call 機會成本",
+     "dose": "重點看 3:29 起「不愛交易 Covered Call 的 3 個理由」段落，把每個理由翻譯成「所以該留多少股不賣 call」",
+     "title": "你真的不該再繼續賣Covered Call的",
+     "channel": "斜槓投資達人",
+     "url": "https://www.youtube.com/watch?v=j7RMw35R5N0",
+     "duration": "6:16"
+    }
+   ]
+  },
+  {
+   "id": "ch5-u3",
+   "name": "撞到履約價:Roll 還是放行",
+   "type": "practice",
+   "assessment": "用模擬帳戶或紙上演練做一輪完整決策：挑一檔你持有（或假設持有 100 股）的股票，假設現價已漲過你 sell call 的履約價 3%。第一步，在券商 roll 下單畫面組一張「買回舊 call＋賣出上移一檔、後移約 30 天的新 call」的單，抄下淨權利金並判斷是 credit 還是 debit；第二步，算出直接被行權的總報酬＝已收權利金＋（履約價−持股成本）；第三步，把兩個數字並排，用一句話寫下你選哪條路和觸發條件。檢核點：若 roll 要付錢（net debit）而你仍想 roll，問自己是不是在不認輸；若說不出觸發條件只說「感覺會再漲」，就是在追高。能在 10 分鐘內完成三步並給出理由即過關。",
+   "tight": [
+    "Roll 決策前先算淨權利金：credit 才考慮，debit 要有明確理由",
+    "被行權的總報酬在賣出 call 當下就已鎖定，行權只是兌現",
+    "每次 roll 都要同時寫下新履約價、新到期日、淨權利金三個數字"
+   ],
+   "weak": [
+    "把被行權當成失敗而付錢 roll（不認輸）",
+    "股價急漲時反射性往上 roll 追價，不設觸發條件",
+    "只看收到的權利金、忽略買回舊倉的成本，把 net debit 誤當賺"
+   ],
+   "lesson": {
+    "name": "撞到履約價：Roll 還是放行",
+    "en": "Strike breached: roll or let it go",
+    "kind": "explainer",
+    "target": "履約價、Roll、被行權、平倉、決策框架",
+    "dose": "完整看一遍；第二遍邊看邊列出影片給的每一種應對方式（roll、平倉、放給它行權）與各自適用情境，做成自己的決策表",
+    "title": "【CC字幕】Covered call 漲超過履約價了怎麼辦： 聊聊我的幾種應對方式【期權操作】【Jo來聊美股】",
+    "channel": "工程師Joseph - 理財揪舒服",
+    "url": "https://www.youtube.com/watch?v=f0V7gkaDvzQ",
+    "duration": "12:05",
+    "why": "繁中且有 CC 字幕，題目與本單元完全同構，股價漲過履約價後的幾種應對方式逐一比較，正是「Roll 還是放行」的決策課；725 秒在主課區間內，13k 觀看數"
+   },
+   "drills": [
+    {
+     "name": "Roll up 與 roll out 的機制：怎麼把 call 往上往後移",
+     "en": "Mechanics of rolling a covered call up and out",
+     "kind": "walkthrough",
+     "target": "Roll up、Roll out、轉倉、下單介面",
+     "dose": "跟著影片在券商（或模擬）介面實際開一張 roll 單：往上移一檔履約價、往後移一個到期日，各操作一次",
+     "title": "美股選擇權 - 如何快速做Covered Call轉倉呢?以讓價差空間越來越大",
+     "channel": "追日Gucci-AI效率革命聯盟",
+     "url": "https://www.youtube.com/watch?v=nOBetz3OJo0",
+     "duration": "9:30"
+    },
+    {
+     "name": "Roll 的成本計算：淨權利金、新履約價與新到期日",
+     "en": "Roll cost math: net credit, new strike, new expiry",
+     "kind": "walkthrough",
+     "target": "淨權利金、履約價、到期日、成本計算",
+     "dose": "在他展示 roll 下單畫面時暫停，自己先算買回舊倉＋賣出新倉的淨權利金是 credit 還是 debit，再播放對答案",
+     "title": "Rolling Options: EVERYTHING You Need to Know || Fidelity Walk-Thru",
+     "channel": "The Retirement Income Investor",
+     "url": "https://www.youtube.com/watch?v=1ABz4DHX_l0",
+     "duration": "8:01"
+    },
+    {
+     "name": "什麼時候不該 roll：追高與不認輸的界線",
+     "en": "When not to roll: chasing and refusing to take the loss",
+     "kind": "explainer",
+     "target": "Roll 陷阱、追高、停損、紀律",
+     "dose": "看完後寫下兩條自己的「不 roll」觸發條件（例：roll 要付 net debit 就不做、新履約價低於成本價就不做）",
+     "title": "Stop Rolling Covered Calls (Do THIS Instead)",
+     "channel": "Peter Pru",
+     "url": "https://www.youtube.com/watch?v=L_xg4imyAL8",
+     "duration": "9:31"
+    },
+    {
+     "name": "讓股票被 call 走：被行權是計畫內結果不是失敗",
+     "en": "Letting shares get called away: assignment as the planned outcome",
+     "kind": "explainer",
+     "target": "被行權、行權交割、總報酬、心態",
+     "dose": "看完用自己一檔持股算一次「被行權總報酬」＝已收權利金＋（履約價−成本價），確認這個數字在賣出 call 當下就已鎖定",
+     "title": "Should You Avoid Getting Assigned on Covered Calls?",
+     "channel": "More Money Less Problems",
+     "url": "https://www.youtube.com/watch?v=Al3rz5T_7C4",
+     "duration": "6:47"
+    }
+   ]
+  }
+ ]
 }

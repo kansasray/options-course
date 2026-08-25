@@ -1,5 +1,229 @@
 {
  "chapter": "CH6",
  "title": "Sell Put 與 Wheel:Led 的主策略",
- "units": []
+ "units": [
+  {
+   "id": "ch6-u1",
+   "name": "Sell Put 的損益結構與現金擔保",
+   "type": "practice",
+   "assessment": "拿一張紙不看影片，畫出「賣出履約價 50、收權利金 2」的 Put 到期損益圖，然後對三個數自我檢核：(1) 股價 50 以上是不是一條水平線、高度正好 +200（一口 100 股）；(2) 損益兩平點是不是 48；(3) 股價歸零時虧損是不是 −4,800。三個數有一個答不出來就回去重看損益圖那支。接著開券商模擬帳戶掛一張 cash-secured put，下單前看帳戶被凍結的現金是不是「履約價 × 100 − 權利金」等級的全額；再查同一張單在保證金帳戶的初始保證金，兩者相除算出槓桿倍數。最後做一個口頭測試：向自己解釋「若明天股價跳空腰斬，我的買入成本是履約價減權利金、不是市價」。說不順就代表還把 sell put 當成無風險打折買股。",
+   "tight": [
+    "損益圖與權利金上限：中英文合格候選都多（简中异界番茄说、Khan Academy、Ryan O'Connell 可互換）",
+    "CSP 基礎教學：英文候選極多（ClearValue Tax 39 萬觀看、Fidelity 官方、SMB Capital 15 萬觀看可當替補主課）",
+    "主課：繁中就有 Nick 美股咖啡館兩支合格片，語言優先序無需妥協"
+   ],
+   "weak": [
+    "「最大損失/歸零」專題：所有直球片（Stock and Options Playbook、Series 7 Guru、Basic Wisdom）觀看數 6–1380，全低於 5000 門檻，只能用綜合 short put 教學帶到",
+    "「打折買股的代價」批判角度：中文圈全是正面宣傳敘事（買便宜價、抄底神器），批判視角只有英文片",
+    "CSP vs 保證金差別：中文無切題片，且「cash secured put 裸賣 區別」查詢整批回 0 筆（疑限流），此題中文覆蓋未能完整確認"
+   ],
+   "lesson": {
+    "name": "Sell Put 的損益結構與現金擔保",
+    "en": "Sell Put P&L Structure and Cash-Secured Puts",
+    "kind": "explainer",
+    "target": "Sell Put、權利金、履約價、損益結構、現金擔保、被指派",
+    "dose": "全片 791 秒一次看完，第二遍只重看損益結構與風險段落並做筆記",
+    "title": "每月「零風險」2-4%穩定現金獲利？！ 最實用的選擇權策略：Sell Put",
+    "channel": "Nick 美股咖啡館",
+    "url": "https://www.youtube.com/watch?v=q_raK2GQeXk",
+    "duration": "13:11",
+    "why": "繁中、專門講 Sell Put 單一策略的完整教學：權利金收入來源、履約價選擇、下跌被指派的後果都有覆蓋，長度 13 分鐘適合當主課；同頻道另一支 1212 秒片（iJ191xHOXVg，17 萬觀看）偏收入行銷敘事，這支更貼近損益結構教學。"
+   },
+   "drills": [
+    {
+     "name": "賣出 Put 的損益圖：權利金上限與下方風險",
+     "en": "Short Put Payoff Diagram: Capped Premium, Open Downside",
+     "kind": "explainer",
+     "target": "損益圖、權利金上限、下方風險、損益兩平點、賣方視角",
+     "dose": "看完 332 秒一遍，邊看邊親手畫出 short put 的到期損益曲線並標出損益兩平點",
+     "title": "期权损益图, 看涨期权的损益曲线,  看跌期权的损益曲线 - 5分钟带你学会 （秒懂期权教学系列）",
+     "channel": "异界番茄说",
+     "url": "https://www.youtube.com/watch?v=xrRsDPUA544",
+     "duration": "5:32"
+    },
+    {
+     "name": "Sell Put 的最大損失：履約價歸零的真實代價",
+     "en": "Short Put Max Loss: What Strike-to-Zero Really Costs",
+     "kind": "explainer",
+     "target": "最大損失、履約價、歸零情境、權利金抵減",
+     "dose": "看 short put 段落，暫停跟著用「履約價 × 100 − 權利金」算一次最大損失，換自己常看的股票再算一次",
+     "title": "Put Options Explained: Short and Long Puts Explained",
+     "channel": "Ryan O'Connell, CFA, FRM",
+     "url": "https://www.youtube.com/watch?v=1ORrRaQT4Zw",
+     "duration": "6:53"
+    },
+    {
+     "name": "Cash-Secured Put 與保證金賣 Put 的差別",
+     "en": "Cash-Secured vs Naked (Margin) Puts",
+     "kind": "explainer",
+     "target": "現金擔保、保證金、裸賣、資金占用、槓桿",
+     "dose": "看完 493 秒一遍，列出兩種方式各自的資金占用與被 margin call 的可能性，寫成兩欄對照",
+     "title": "What's The Difference Between Cash Covered And Naked Puts?",
+     "channel": "Markus Heitkoetter - Investor & Lifelong Learner",
+     "url": "https://www.youtube.com/watch?v=WQt-3StLaFU",
+     "duration": "8:13"
+    },
+    {
+     "name": "「打折買股」的真相：折價的代價是放棄暴跌保護",
+     "en": "The 'Buy at a Discount' Myth: You Trade Away Crash Protection",
+     "kind": "explainer",
+     "target": "打折買股、暴跌風險、下方暴露、機會成本",
+     "dose": "看完 315 秒一遍，之後用一支近期崩過的股票回推：當時 sell put 的「折價成本」對比市價買入差多少",
+     "title": "🚨 Stop Selling Cash Secured Puts (This Strategy is Better) 🚨",
+     "channel": "Options Trading IQ",
+     "url": "https://www.youtube.com/watch?v=UePNSAB-cd4",
+     "duration": "5:15"
+    }
+   ]
+  },
+  {
+   "id": "ch6-u2",
+   "name": "流程:回檔開倉、小賺平倉、接股或不接",
+   "type": "practice",
+   "assessment": "用模擬帳戶跑一輪完整流程並留下三樣證據:(1) 選一檔你真的願意持有的股票,等單日跌幅 2% 以上的回檔日才賣出 Put,成交當下截圖記錄進場理由與收到的權利金;(2) 成交後立刻掛好 GTC 買回單在權利金剩 50% 的價位,之後不准改單;(3) 若到期被指派接股,24 小時內寫下三個選項（續抱、賣 Covered Call、認錯出場）各自的損益條件,再選一個執行並記下理由。四週後回看:每一筆交易都找得到「進場理由截圖、預掛平倉單、指派決策筆記」三樣才算通過;缺任何一樣,就代表該段流程還沒內化,回去重看對應的動作影片。",
+   "tight": [
+    "主課:Nick 影片同時在「賣put 策略」與「wheel strategy 中文」兩組查詢命中,完整覆蓋本單元三段流程,繁中 17 萬觀看",
+    "動作1:富翁電視 EP5「優質股票撈底+收租」就是「回檔時開倉」的繁中直講,含風險提醒",
+    "動作2:Option Alpha Ep516 標題即是本動作的問題本身（該不該提早獲利了結）,4 分鐘單一論證",
+    "動作4:Kelvin NO EP3「有貨Short Call、蟹貨點算好」直接回答接股後的下一步選項,繁中 7 萬觀看"
+   ],
+   "weak": [
+    "動作2、動作3 中文圈各查 3-4 組關鍵字均無合格對應片,只能取英文;讀者需能看英文字幕",
+    "動作3 選片講的是「依目的選 DTE/Delta」的通用框架,未明說「短天期接股 vs 長天期搶權利金」二分法,需課文補一句對應",
+    "動作1 的「賣put 進場時機」查詢只有 2 筆合格,回檔進場主題在中文圈片源偏少,備選僅 hfwdRXFmPSY（跌市應對,主題偏管理非進場）"
+   ],
+   "lesson": {
+    "name": "回檔開倉、小賺平倉、接股或不接:賣 Put 主流程完整走一遍",
+    "en": "The Sell Put Cycle: Enter on Dips, Close Early, Take Assignment or Not",
+    "kind": "explainer",
+    "target": "賣Put流程、回檔進場、權利金、提前平倉、接股決策、Wheel策略",
+    "dose": "全片 20 分鐘看完,邊看邊抄下他的三個規則:什麼條件開倉、賺到多少平倉、被指派後下一步",
+    "title": "（含金量破表）你唯一須要的期權策略：我如何每週穩定獲利$500美元？學會了一生受用！",
+    "channel": "Nick 美股咖啡館",
+    "url": "https://www.youtube.com/watch?v=iJ191xHOXVg",
+    "duration": "20:12",
+    "why": "繁中、20 分鐘、17 萬次觀看,把本單元的三段流程（何時賣 Put 開倉、收到權利金後何時平倉、接股後轉入下一循環）用實際每週操作完整走一遍,正是本章「Led 的主策略」的原型;在「賣put 策略」與「wheel strategy 中文」兩組查詢都排第一,主題吻合度有交叉佐證"
+   },
+   "drills": [
+    {
+     "name": "回檔時開倉:賣 Put 的進場時機選擇",
+     "en": "Entry Timing: Selling Puts on Pullbacks",
+     "kind": "explainer",
+     "target": "回檔進場、撈底、Short Put開倉、進場時機、優質股",
+     "dose": "看一遍 9 分鐘,記下「在願意持有的股票回檔時才開倉」的判斷條件與風險提醒",
+     "title": "雙贏賺錢法！如何用Short Put 優質股票撈底+穩定收租，實現穩定被動收入！留意風險｜期權基本四式 【期權收租寶｜新手指南】 EP５ #投資 #小寶",
+     "channel": "富翁電視MTTV",
+     "url": "https://www.youtube.com/watch?v=jaqNJkLz1QU",
+     "duration": "9:17"
+    },
+    {
+     "name": "小賺就平倉:為什麼不等到期的獲利了結紀律",
+     "en": "Take Profits Early: Why Not Hold to Expiration",
+     "kind": "explainer",
+     "target": "提前平倉、獲利了結、50%法則、風險遞增、到期日",
+     "dose": "看一遍 4 分鐘,聽懂「剩餘權利金 vs 剩餘風險不成比例」這一個論證即可",
+     "title": "Should You Take Profits Early When Selling Naked Puts? [Episode 516] - The Daily Call",
+     "channel": "Option Alpha",
+     "url": "https://www.youtube.com/watch?v=2JQ5s7O_T_M",
+     "duration": "3:40"
+    },
+    {
+     "name": "短天期願意接股 vs 長天期搶權利金:兩種賣 Put 用法",
+     "en": "Short-DTE Willing to Take Shares vs Long-DTE Premium Farming",
+     "kind": "explainer",
+     "target": "到期日選擇、DTE、Delta、短天期、長天期、權利金衰減",
+     "dose": "看一遍 6 分鐘,把「依目的選 DTE 與履約價」的框架對回課文的兩種用法各填一組參數",
+     "title": "The Best Strike (Delta) and DTE for Selling Puts (A Clear Framework)",
+     "channel": "Options Trading IQ",
+     "url": "https://www.youtube.com/watch?v=YCACBAsAp38",
+     "duration": "6:23"
+    },
+    {
+     "name": "被指派接股之後:下一步的處理選項",
+     "en": "After Assignment: Your Next-Step Options",
+     "kind": "explainer",
+     "target": "被指派、接股、接貨、Covered Call、蟹貨處理、Short Call",
+     "dose": "重點看後半段「有貨 Short Call、蟹貨點算」約 5 分鐘,列出接股後的每個選項與適用情況",
+     "title": "💰真 期權教室💰 EP3 初級篇 有錢Short Put 有貨Short Call? 渣住匯豐蟹貨點算好? Option Tutorial Beginner Level",
+     "channel": "Kelvin NO 講投資",
+     "url": "https://www.youtube.com/watch?v=4sC59wcRg44",
+     "duration": "9:37"
+    }
+   ]
+  },
+  {
+   "id": "ch6-u3",
+   "name": "Wheel:CSP 與 CC 的循環",
+   "type": "practice",
+   "assessment": "看完主課後拿一張白紙，不看影片畫出 Wheel 四格循環圖（現金→賣 CSP→接股→賣 CC→被 call 走→回到現金），每個箭頭標上現金流方向與觸發條件（到期價 vs 履約價），畫不完整就重看主課。接著自設一組數字（例：股價 $50、賣 $48 Put 收 $1.2、接股後賣 $52 Call 收 $1.0）逐步算出：接股後的實際持股成本、每輪權利金累計、被 call 走時的總報酬，算法與 drill 2 的試算表對照，欄位對不上就補看。最後做壓力測試：假設接股後股價跌 30%，用你算出的每月 CC 權利金除以帳面虧損，算出要收幾個月才回本。若答案超過 24 個月而你原本以為「CC 可以救回來」，回頭重看 drill 3，並用 drill 4 的轉倉步驟在券商模擬帳戶實際下一張 roll 單截圖存證。",
+   "tight": [
+    "主課：中英繁簡候選都充足，繁中 173,884 觀看且 tags 證實 sell put＋covered call 內容，直接勝出",
+    "drill 3：英文 wheel 專門批判片 97,519 觀看、439 秒，正中「跌深救不回」主題",
+    "drill 4：繁中轉倉實作片描述證實正是撞價後的 roll 操作，語言優先序與主題都滿足"
+   ],
+   "weak": [
+    "drill 1 查無 30–600 秒的中文完整循環短片（「sell put 接股票 covered call 循環」符合 0 筆；天哥 TQQQ 拆解 969s 超長），改用英文 582s 章節齊全片",
+    "drill 2 查無中文 wheel 逐步損益片，繁中 YC TalkTalk 只講 CC 單邊降成本，改用英文試算表 walkthrough（7,430 觀看，僅小幅超過 5,000 門檻）",
+    "drill 3 捨繁中候選（斜槓投資達人 CC 批判片）因描述實查顯示不含 wheel 整體與跌深情境，語言讓位給主題精準度"
+   ],
+   "lesson": {
+    "name": "Wheel 策略主課：Sell Put 與 Covered Call 的收租循環",
+    "en": "The Wheel: cycling cash-secured puts into covered calls",
+    "kind": "explainer",
+    "target": "Wheel 循環、Sell Put、Covered Call、權利金、現金流、NVDA 實例",
+    "dose": "全片一次看完，約 20 分鐘",
+    "title": "（含金量破表）你唯一須要的期權策略：我如何每週穩定獲利$500美元？學會了一生受用！",
+    "channel": "Nick 美股咖啡館",
+    "url": "https://www.youtube.com/watch?v=iJ191xHOXVg",
+    "duration": "20:11",
+    "why": "繁中（台灣國語）觀看數最高的 Wheel 教學：影片 tags 實查證實內容為 sell put＋sell covered call（NVDA 實例），且在「wheel策略 選擇權 教學」「車輪策略 sell put covered call」「wheel strategy 期權 教學」三個查詢都排第一。同題繁中對手 Kelvin NO（粵語，9,312 觀看）與簡中天哥（9,293 觀看）在語言與觀看數都落後。"
+   },
+   "drills": [
+    {
+     "name": "Wheel 策略完整循環:CSP、接股、CC、被 Call 走",
+     "en": "The full wheel cycle: CSP, assignment, CC, called away",
+     "kind": "explainer",
+     "target": "Wheel 循環、Cash-Secured Put、接股、Covered Call、被 Call 走、損益兩平",
+     "dose": "全片一遍，邊看邊在紙上畫出四階段循環圖",
+     "title": "Get Paid to Wait: The Wheel Strategy Explained in 10 Minutes",
+     "channel": "Markus Heitkoetter - Investor & Lifelong Learner",
+     "url": "https://www.youtube.com/watch?v=ab1V43DxfgI",
+     "duration": "9:42"
+    },
+    {
+     "name": "Wheel 每一步的損益與持股成本計算",
+     "en": "Tracking P&L and cost basis at each step of the wheel",
+     "kind": "walkthrough",
+     "target": "持股成本、權利金累計、損益追蹤、試算表、每步記帳",
+     "dose": "全片一遍，開自己的試算表跟著建欄位，再用自設數字算一輪",
+     "title": "The EASIEST Way To Track Wheel Strategy Trades",
+     "channel": "Buy Borrow Die",
+     "url": "https://www.youtube.com/watch?v=umvb_gAazrw",
+     "duration": "9:04"
+    },
+    {
+     "name": "Wheel 的隱藏風險:股票跌深後 CC 收入救不回來",
+     "en": "The wheel's hidden risk: CC income can't rescue a deep drawdown",
+     "kind": "explainer",
+     "target": "深度回撤、權利金覆蓋率、Wheel 缺點、下檔風險、機會成本",
+     "dose": "全片一遍，記下影片中的下跌情境數字，自己重算一次",
+     "title": "Why I DON'T Use the Wheel Strategy (and why you shouldn't either)",
+     "channel": "More Money Less Problems",
+     "url": "https://www.youtube.com/watch?v=_1TLCCHsKKc",
+     "duration": "7:19"
+    },
+    {
+     "name": "Covered Call 撞價時的取捨:Roll 還是換股",
+     "en": "When your covered call goes ITM: roll it or let the shares go",
+     "kind": "walkthrough",
+     "target": "轉倉、Roll、履約價、被指派、時間值、IB 下單",
+     "dose": "全片一遍，開券商模擬單跟做一次轉倉（combo 單）",
+     "title": "美股選擇權 - 如何快速做Covered Call轉倉呢?以讓價差空間越來越大",
+     "channel": "追日Gucci-AI效率革命聯盟",
+     "url": "https://www.youtube.com/watch?v=nOBetz3OJo0",
+     "duration": "9:30"
+    }
+   ]
+  }
+ ]
 }
