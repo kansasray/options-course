@@ -519,10 +519,14 @@ def fig_premium_decomposition():
     b.append(T(fr.X(124), fr.Y(9), "內在價值", size=14, fill=GREEN, anchor="end", weight="600"))
     b.append(T(fr.X(74), fr.Y(24), "時間價值(權利金−內在)", size=14, fill=AMBER, weight="600"))
     b.append(
-        f'<line x1="{P(fr.X(94))}" y1="{P(fr.Y(22.4))}" x2="{P(fr.X(100))}"'
-        f' y2="{P(fr.Y(7))}" stroke="{AMBER}" stroke-width="1" opacity=".7"/>'
+        f'<line x1="{P(fr.X(94))}" y1="{P(fr.Y(22.4))}" x2="{P(fr.X(100.5))}"'
+        f' y2="{P(fr.Y(5.2))}" stroke="{AMBER}" stroke-width="1" opacity=".7"/>'
     )
-    b.append(T(fr.X(74), fr.Y(19.5), "權利金曲線", size=12, fill=AMBER, opacity=".9"))
+    b.append(T(fr.X(112), fr.Y(20.5), "權利金曲線", size=12, fill=AMBER, anchor="end", opacity=".9"))
+    b.append(
+        f'<line x1="{P(fr.X(113))}" y1="{P(fr.Y(19.6))}" x2="{P(fr.X(116.5))}"'
+        f' y2="{P(fr.Y(17.9))}" stroke="{AMBER}" stroke-width="1" opacity=".7"/>'
+    )
     return doc(b, aria="權利金分解圖:買權價值曲線分成內在價值與時間價值兩塊,價平附近時間價值最大")
 
 
@@ -583,7 +587,7 @@ def fig_iv_crush():
     b.append(T(fr.X(1.1), fr.Y(100), "權利金一夜蒸發", size=12, fill=RED))
     axes_bottom(b, fr, "財報前後交易日", "相對水準",
                 xticks=[(-10, "−10"), (-5, "−5"), (0, "財報"), (5, "+5")])
-    b.append(T(fr.L, fr.Tp - 4, "指數化:10 日前=100", size=11, opacity=".8"))
+    b.append(T(fr.X(-9.8), fr.Y(224), "指數化:財報前 10 日=100", size=11, opacity=".85"))
     return doc(b, aria="IV crush 示意圖:財報前 IV 與權利金走高,公布後同步驟降,權利金蒸發")
 
 
