@@ -135,6 +135,23 @@ function lessonBox(u) {
     </div>`;
 }
 
+/* --- 單元圖表 ------------------------------------------------------------ */
+
+/** 單元層級的圖表：資料驅動，u.figures 陣列或單數 u.figure 皆可，
+    沒有欄位就不產生任何 DOM（比照 u.summary 的作法）。 */
+function unitFigures(u) {
+  const figs = (u.figures || (u.figure ? [u.figure] : [])).filter((f) => f?.src);
+  return figs
+    .map(
+      (f) => `
+    <figure class="UnitFigure">
+      <img src="${esc(f.src)}" alt="${esc(f.alt)}" loading="lazy">
+      ${f.caption ? `<figcaption class="UnitFigure__caption">${esc(f.caption)}</figcaption>` : ""}
+    </figure>`,
+    )
+    .join("");
+}
+
 /* --- 動作清單 ------------------------------------------------------------ */
 
 function facetTags(list) {
@@ -389,6 +406,7 @@ export function renderUnit(u, done, locked = false) {
 
       <div class="Unit__body">
         ${lessonBox(u)}
+        ${unitFigures(u)}
         ${
           u.assessment
             ? `<div class="Assessment">
