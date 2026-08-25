@@ -1,0 +1,109 @@
+{
+ "conditions": [
+  {
+   "unit": "concept-1",
+   "name": "賣方的「穩定收入」是什麼換來的",
+   "evidence_grade": "empirical",
+   "claim": "「covered call 讓你穩定收租,漲跌都賺」——賣方策略最常見的行銷句。",
+   "evidence_says": "學界對 covered call 的研究相當充分:CBOE 的 BXM 買寫指數自 2002 年起有同儕審查的報酬與風險分析,2014 年 Israelov 與 Nielsen 在 Financial Analysts Journal 的論文標題就叫〈Covered Call 策略:一個事實與八個迷思〉。共同的結論方向是:權利金收入是真的,但它是承擔尾部風險與放棄上檔的補償,經風險調整後不存在免費午餐。",
+   "applies_when": "covered call 在盤整與溫和上漲的市場勝過純持股,在急漲市場顯著落後(上檔被履約價截斷),在急跌市場只比純持股多一層權利金的薄墊。它改變的是報酬的形狀,不是報酬的多寡。",
+   "summary": "權利金是風險的價格,不是白拿的租金。賣方賺的每一塊錢,都對應著某個先放棄或先承擔的東西。",
+   "red_flags": [
+    "把權利金年化成「保證報酬率」的文宣",
+    "只展示盤整期績效的回測",
+    "說 covered call「沒有缺點」或「進可攻退可守」而不提急漲急跌兩種情境"
+   ],
+   "caveats": "本則兩筆引用的摘要 Crossref 皆未收錄,takeaway 依標題與期刊所能支持的範圍撰寫,未逾越。BXM 指數是機械式月頻策略,與課程中 Gozilla 的參數化做法(delta 0.25–0.3、部分水位)並不相同——文獻支持的是「權利金=風險補償」這個結構性結論,不是任何特定參數的優劣。",
+   "citations": [
+    {
+     "doi": "10.2469/faj.v70.n6.3",
+     "title": "Covered Call Strategies: One Fact and Eight Myths",
+     "journal": "Financial Analysts Journal",
+     "year": 2014,
+     "url": "https://doi.org/10.2469/faj.v70.n6.3",
+     "design": "peer-reviewed-study",
+     "takeaway": "以〈一個事實與八個迷思〉為題系統檢視 covered call 策略的常見宣稱(依標題與 FAJ 所述;摘要未取得)。"
+    },
+    {
+     "doi": "10.3905/jod.2002.319194",
+     "title": "Return and Risk of CBOE Buy Write Monthly Index",
+     "journal": "The Journal of Derivatives",
+     "year": 2002,
+     "url": "https://doi.org/10.3905/jod.2002.319194",
+     "design": "peer-reviewed-study",
+     "takeaway": "對 CBOE 買寫月指數(BXM)的報酬與風險做同儕審查分析(依標題與期刊所述;摘要未取得)。"
+    }
+   ]
+  },
+  {
+   "unit": "concept-2",
+   "name": "散戶做選擇權,實證績效如何",
+   "evidence_grade": "empirical",
+   "claim": "「學會這套策略,你也可以每月穩定加薪」——教學影片與課程廣告的預設前提是散戶學了就能贏。",
+   "evidence_says": "Barber 與 Odean 2000 年在 Journal of Finance 的研究(66,465 個折扣券商家庭帳戶)摘要原文指出:直接持有股票的散戶為頻繁交易付出巨大的績效代價。選擇權的版本由 Bauer 等人 2009 年在 Journal of Banking & Finance 以〈選擇權交易與散戶投資人績效〉為題接續研究。兩條證據線的方向一致:交易越主動,落後越多。",
+   "applies_when": "這是母體統計,不是個體判決:它說的是「平均而言散戶選擇權交易者落後」,不是「你必然落後」。但要主張自己是例外,舉證責任在你——需要完整的交易紀錄與夠長的時間,不是幾張獲利截圖。",
+   "summary": "實證研究裡,散戶主動交易的平均結果是落後大盤。這門課教的保守賣方框架把交易頻率與風險都壓低,正是對這條證據的回應,不是對它的反駁。",
+   "red_flags": [
+    "用少數月份的損益截圖當「績效證明」",
+    "把權利金收入講成薪水而不提同期持股的市值變化",
+    "任何無法出示完整逐筆紀錄的報酬率宣稱"
+   ],
+   "caveats": "Barber 與 Odean 研究的是股票交易(摘要有取得,引述如上),選擇權部分由 Bauer 2009 承接,但後者摘要未取得,takeaway 僅依標題與期刊範圍。另:課程收錄的兩位創作者(Gozilla、Led)之績效數字皆為本人自述,課程無法驗證,依本課證據階梯屬 self-reported(最低層),永不作為證據使用。",
+   "citations": [
+    {
+     "doi": "10.1111/0022-1082.00226",
+     "title": "Trading Is Hazardous to Your Wealth: The Common Stock Investment Performance of Individual Investors",
+     "journal": "The Journal of Finance",
+     "year": 2000,
+     "url": "https://doi.org/10.1111/0022-1082.00226",
+     "design": "peer-reviewed-study",
+     "takeaway": "摘要原文:直接持股的散戶為主動交易付出巨大的績效代價(66,465 個家庭帳戶)。"
+    },
+    {
+     "doi": "10.1016/j.jbankfin.2008.11.005",
+     "title": "Option trading and individual investor performance",
+     "journal": "Journal of Banking &amp; Finance",
+     "year": 2009,
+     "url": "https://doi.org/10.1016/j.jbankfin.2008.11.005",
+     "design": "peer-reviewed-study",
+     "takeaway": "以散戶選擇權交易與投資人績效為題的實證研究(依標題與期刊所述;摘要未取得)。"
+    }
+   ]
+  },
+  {
+   "unit": "concept-3",
+   "name": "「以小博大」的真實數學",
+   "evidence_grade": "mixed",
+   "claim": "「買一口只要幾十美金,漲起來十倍起跳」——買方的吸引力全在這句話。",
+   "evidence_says": "Bondarenko 2014 年在 Quarterly Journal of Finance 的論文摘要原文研究「put 偏貴之謎」:S&P 500 賣權的歷史價格「太高、與典型資產定價模型不相容」——指數 put 的買方長期付出系統性的溢價。更早在 1975 年,Financial Analysts Journal 已有 CBOE 與 AMEX 選擇權交易報酬與風險的研究。偏貴的直接推論:賣方收的正是這個溢價,買方付的也是。",
+   "applies_when": "證據最強的是指數 put(避險需求推高價格);個股 call 的「偏貴」證據較分歧,事件行情(財報、併購)前後的定價又是另一回事。「以小博大」不是不可能,是你必須同時算對方向、幅度、時間三件事,而權利金已經把市場的估計定價進去了。",
+   "summary": "買方的劣勢不在權利金的絕對數字,在於它平均而言已被定價到讓長期期望值偏向賣方——尤其是指數 put。偶爾的十倍案例與長期的期望值是兩件事。",
+   "red_flags": [
+    "只展示中獎案例不展示歸零次數的內容",
+    "「花小錢買保險」不提保險費長期累積成本",
+    "財報前買 call 只談方向不談 IV crush"
+   ],
+   "caveats": "本則標為結果分歧是誠實的結果:put 偏貴(尤其指數 put)有強實證(Bondarenko 摘要已取得並引述),但「所有價外選擇權都偏貴、買方必輸」不能由本課引用支持——個股與 call 側的文獻結論分歧,1975 年那篇的摘要亦未取得(takeaway 僅依標題範圍)。買方在特定條件下(明確的事件優勢、正確的波動判斷)可以有正期望,只是那不是新手的預設狀態。",
+   "citations": [
+    {
+     "doi": "10.1142/s2010139214500153",
+     "title": "Why Are Put Options So Expensive?",
+     "journal": "Quarterly Journal of Finance",
+     "year": 2014,
+     "url": "https://doi.org/10.1142/s2010139214500153",
+     "design": "peer-reviewed-study",
+     "takeaway": "摘要原文:研究「偏貴的 put 之謎」——S&P 500 賣權歷史價格過高、與典型資產定價模型不相容。"
+    },
+    {
+     "doi": "10.2469/faj.v31.n4.42",
+     "title": "Risk and Return in CBOE and AMEX Option Trading",
+     "journal": "Financial Analysts Journal",
+     "year": 1975,
+     "url": "https://doi.org/10.2469/faj.v31.n4.42",
+     "design": "peer-reviewed-study",
+     "takeaway": "CBOE 與 AMEX 選擇權交易的報酬與風險早期實證(依標題與期刊所述;摘要未取得)。"
+    }
+   ]
+  }
+ ]
+}
