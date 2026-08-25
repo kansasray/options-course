@@ -1,0 +1,128 @@
+{
+ "選擇權基礎 call/put": {
+  "ok": 34,
+  "zh": 16,
+  "top": [
+   "CA Rachana Phadke Ranade — Option Trading For Beginners | CA Rachana Ra (5,400,210)",
+   "Sky View Trading — Options Trading: Understanding Option Prices (5,191,146)",
+   "Sky View Trading — Options Trading Explained - COMPLETE BEGINNE (4,512,084)"
+  ]
+ },
+ "定價/時間價值": {
+  "ok": 14,
+  "zh": 5,
+  "top": [
+   "Sky View Trading — Options Trading: Understanding Option Prices (5,191,146)",
+   "projectoption — Option Theta Explained (Time Decay Visualize (155,065)",
+   "Option Alpha — Understanding Theta - Time Decay Of Options (85,160)"
+  ]
+ },
+ "Greeks": {
+  "ok": 27,
+  "zh": 8,
+  "top": [
+   "Pushkar Raj Thakur: Stock Market Educator 📈 — Option Greeks Explained - Theta Delta Gamma  (3,866,851)",
+   "Pushkar Raj Thakur: Stock Market Educator 📈 — Option Greeks Delta, Gamma, Theta, Vega Expl (1,161,162)",
+   "Brad Finn — BEFORE Trading Options Learn The Greeks | Op (519,149)"
+  ]
+ },
+ "隱含波動率 IV": {
+  "ok": 22,
+  "zh": 8,
+  "top": [
+   "InTheMoney — 3 Ways to Avoid IV Crush | Why Your Calls Lo (209,693)",
+   "projectoption — Mastering Implied Volatility: What Options T (121,658)",
+   "Everything Options — OPTIONS TRADING BASICS | Implied Volatility  (98,904)"
+  ]
+ },
+ "Covered Call": {
+  "ok": 32,
+  "zh": 12,
+  "top": [
+   "Benjamin — Poor Man's Covered Calls Strategy in Robinho (1,491,866)",
+   "ClearValue Tax — Covered Calls Explained: Options Trading For (967,937)",
+   "SMB Capital — How to Trade Covered Calls Properly (The 3 k (793,461)"
+  ]
+ },
+ "Sell Put/CSP": {
+  "ok": 23,
+  "zh": 7,
+  "top": [
+   "InTheMoney — How to Trade Cash-Secured Puts on Robinhood: (451,475)",
+   "ClearValue Tax — Cash Secured Puts Explained: Options Trading (392,954)",
+   "Terry Chen 泰瑞 — 一次搞懂選擇權（期權） (185,718)"
+  ]
+ },
+ "Wheel 策略": {
+  "ok": 25,
+  "zh": 3,
+  "top": [
+   "BWB - Business With Brian — Options Trading for Beginners:  Total Guide  (988,544)",
+   "Markus Heitkoetter - Investor & Lifelong Learner — The \"Wheel\" Options Strategy - A Step By Ste (297,570)",
+   "Brad Finn — Best Beginner Options Trading Strategy (Whee (203,845)"
+  ]
+ },
+ "價差單 spreads": {
+  "ok": 26,
+  "zh": 11,
+  "top": [
+   "Sky View Trading — How to Make Money Trading Options - The Vert (1,838,671)",
+   "Sky View Trading — The Right Way To Buy Options -  Long Vertica (1,581,137)",
+   "tastylive — How We Trade 0DTE Vertical Spreads (without  (234,886)"
+  ]
+ },
+ "Iron Condor": {
+  "ok": 29,
+  "zh": 6,
+  "top": [
+   "Sky View Trading — Iron Condor Options Trading Strategy - Best  (1,341,768)",
+   "Options With Davis — If I Could Only Trade ONE Strategy, It Would (489,092)",
+   "tastylive — Iron Condor Adjustments Tutorial | Options T (280,411)"
+  ]
+ },
+ "LEAPS/PMCC": {
+  "ok": 32,
+  "zh": 15,
+  "top": [
+   "Benjamin — Poor Man's Covered Calls Strategy in Robinho (1,491,866)",
+   "Markus Heitkoetter - Investor & Lifelong Learner — Poor Man's Covered Call Explained - Proven T (362,262)",
+   "老李玩钱 — 全网最详尽期权攻略！实盘操作演示，手把手教你玩转期权！以小博大，赚翻10倍 (323,830)"
+  ]
+ },
+ "履約與指派": {
+  "ok": 10,
+  "zh": 0,
+  "top": [
+   "projectoption — Why Options Are Rarely Exercised (Options Tr (523,170)",
+   "Option Alpha — Options Expiration & Assignment - Options Me (113,540)",
+   "projectoption — Early Options Assignment Risk (When to Worry (76,343)"
+  ]
+ },
+ "下單實務": {
+  "ok": 26,
+  "zh": 10,
+  "top": [
+   "Smart Money with Kai — How to Use Interactive Brokers in 2026: Full (461,232)",
+   "老李玩钱 — 全网最详尽期权攻略！实盘操作演示，手把手教你玩转期权！以小博大，赚翻10倍 (323,830)",
+   "Adam Khoo — Trading Options with Interactivebrokers Comp (196,961)"
+  ]
+ },
+ "風險管理": {
+  "ok": 20,
+  "zh": 4,
+  "top": [
+   "The Trading Geek — ULTIMATE Risk Management & Position Sizing i (601,138)",
+   "老李玩钱 — 全网最详尽期权攻略！实盘操作演示，手把手教你玩转期权！以小博大，赚翻10倍 (323,830)",
+   "Whispers of WallStreet — Jesse Livermore | Number One Rule for Positi (240,456)"
+  ]
+ },
+ "新手常見錯誤": {
+  "ok": 22,
+  "zh": 10,
+  "top": [
+   "Humbled Trader — TOP 5 Day Trading Beginner Mistakes to AVOID (1,790,251)",
+   "Neeraj joshi — 12 Option Trading Mistakes to Avoid | Option (613,565)",
+   "SMB Capital — You'll Fail With Options Trading Until You U (359,319)"
+  ]
+ }
+}

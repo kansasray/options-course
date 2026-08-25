@@ -1,0 +1,17 @@
+主題                   合格   中文  最佳(觀看數)
+選擇權基礎 call/put       34   16  CA Rachana Phadke Ranade — Option Trading For Beginners | CA Rachana Ra (5,400,210)
+定價/時間價值              14    5  Sky View Trading — Options Trading: Understanding Option Prices (5,191,146)
+Greeks               27    8  Pushkar Raj Thakur: Stock Market Educator 📈 — Option Greeks Explained - Theta Delta Gamma  (3,866,851)
+隱含波動率 IV             22    8  InTheMoney — 3 Ways to Avoid IV Crush | Why Your Calls Lo (209,693)
+Covered Call         32   12  Benjamin — Poor Man's Covered Calls Strategy in Robinho (1,491,866)
+Sell Put/CSP         23    7  InTheMoney — How to Trade Cash-Secured Puts on Robinhood: (451,475)
+Wheel 策略             25    3  BWB - Business With Brian — Options Trading for Beginners:  Total Guide  (988,544)
+價差單 spreads          26   11  Sky View Trading — How to Make Money Trading Options - The Vert (1,838,671)
+Iron Condor          29    6  Sky View Trading — Iron Condor Options Trading Strategy - Best  (1,341,768)
+LEAPS/PMCC           32   15  Benjamin — Poor Man's Covered Calls Strategy in Robinho (1,491,866)
+履約與指派                10    0  projectoption — Why Options Are Rarely Exercised (Options Tr (523,170)
+下單實務                 26   10  Smart Money with Kai — How to Use Interactive Brokers in 2026: Full (461,232)
+風險管理                 20    4  The Trading Geek — ULTIMATE Risk Management & Position Sizing i (601,138)
+新手常見錯誤               22   10  Humbled Trader — TOP 5 Day Trading Beginner Mistakes to AVOID (1,790,251)
+
+明細已存 docs/plans/supply-survey.json
