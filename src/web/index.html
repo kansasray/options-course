@@ -41,8 +41,11 @@
             var k = localStorage.key(i);
             if (k && k.slice(-6) === ":theme") t = read(k);
           }
-          if (t) document.documentElement.dataset.theme = t;
-        } catch (e) {}
+          // 站方預設淺色:沒存過偏好一律 light,深色只在使用者按過切換鈕後生效。
+          document.documentElement.dataset.theme = t || "light";
+        } catch (e) {
+          document.documentElement.dataset.theme = "light";
+        }
       })();
     </script>
   </head>
